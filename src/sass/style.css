@@ -1,5 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 2% 240px;
+}
+
+.geral {
+  width: 100vw;
+  display: flex;
+  align-items: end;
+}
+
+.home::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), #000408), url("/assets/imagens/imagem-home.png");
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 800px;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+  opacity: 0.9;
+}
+
+.navbar {
+  display: flex;
+  gap: 60px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 60px;
+}
+
+.navbar li {
+  color: aliceblue;
+}
+
+.text-inicial {
+  margin-left: 330px;
+}
+
+.sessao {
+  margin-top: 400px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Abhaya";
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

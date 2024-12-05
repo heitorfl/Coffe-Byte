@@ -1,10 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
 
+
+@import 'home';
+@import 'colors';
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@import 'header';
-@import 'colors'
+body{
+    font-family: "Abhaya";
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
