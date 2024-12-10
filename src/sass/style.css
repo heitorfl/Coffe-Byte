@@ -57,6 +57,31 @@
   margin-top: 400px;
 }
 
+header {
+  padding: 10px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7019607843), rgba(255, 255, 255, 0)), url(/assets/imagens/Imagem-Fundo.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.navbar {
+  border: 1px solid red;
+  margin-left: 90vh;
+}
+
+.navbar-brand img {
+  width: 130px;
+  border: 1px solid red;
+}
+
+.navbar ul li {
+  padding-left: 50px;
+}
+
 * {
   margin: 0;
   padding: 0;
