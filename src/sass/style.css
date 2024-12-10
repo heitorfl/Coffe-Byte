@@ -8,53 +8,110 @@
 .home {
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  align-items: end;
-  padding: 2% 240px;
-}
-
-.geral {
-  width: 100vw;
-  display: flex;
-  align-items: end;
 }
 
 .home::before {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), #000408), url("/assets/imagens/imagem-home.png");
+  background-image: linear-gradient(to left, rgba(64, 44, 14, 0.407), #000408), url("/assets/imagens/imagem-fundo-home.svg");
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 800px;
+  width: 100%;
+  height: 500px;
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 90% 0;
-  opacity: 0.9;
+  opacity: 10;
+}
+
+.cabecalho {
+  margin-top: 30px;
 }
 
 .navbar {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 60px;
 }
-
 .navbar ul {
   display: flex;
   gap: 60px;
 }
-
 .navbar li {
-  color: aliceblue;
+  color: #FFFCF2;
+}
+
+button {
+  border: 0;
+}
+
+.login {
+  background-color: #252422;
+  color: #BC8A5F;
+  font-weight: 700;
+  border: 2px solid #BC8A5F;
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.login:hover {
+  transform: translateY(-5px);
+  background-color: #FFFCF2;
+  color: #252422;
+  border: 0;
+}
+
+.sing-in {
+  background-color: #BC8A5F;
+  font-weight: 700;
+  color: #FFFCF2;
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.sing-in:hover {
+  transform: translateY(-5px);
+  background-color: #FFFCF2;
+  color: #252422;
+  border: 0;
 }
 
 .text-inicial {
-  margin-left: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.sessao {
-  margin-top: 400px;
+.text-inicial img {
+  width: 300px;
+  height: auto;
+}
+.text-inicial p {
+  color: #FFFCF2;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.text-inicial .btn-veja-mais {
+  width: 320px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #BC8A5F;
+  color: #FFFCF2;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 * {
