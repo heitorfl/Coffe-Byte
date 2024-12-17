@@ -161,7 +161,6 @@ button {
   justify-content: center;
   align-items: center;
   width: 1210px;
-  border: 1px solid red;
 }
 
 .btn-toggler {
@@ -173,20 +172,99 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 
 .section {
-  border: 1px solid red;
   margin: 0 40px 0 40px;
 }
 
 .card {
-  width: 250px;
-  border: 1px solid #FFFCF2;
-  padding: 20px;
+  width: 350px;
   margin: 10px;
   border-radius: 20px;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.card-img img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 349px;
+  height: 300px;
+}
+
+.card-body {
+  border: 1px solid #FFFCF2;
+  padding: 10px;
+  margin-top: -5px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.card-body h2 {
+  border-bottom: 1px solid #FFFCF2;
+  margin: 10px;
+}
+
+.card-body h3 {
+  margin: 10px;
+  font-size: 24px;
+}
+
+.card-body p {
+  margin: 10px;
+  font-size: 15px;
+}
+
+.card-body .btn-card {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 10px 20px 10px 20px;
+}
+.card-body .btn-card .calc {
+  display: inline-flex;
+}
+.card-body .btn-card .calc button {
+  padding: 11px 15px;
+  border-radius: 50%;
+  background-color: #FFFCF2;
+  font-size: 20px;
+  text-align: center;
+}
+.card-body .btn-card .add {
+  padding: 5px 30px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #FFFCF2;
+  color: #FFFCF2;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+}
+.card-body .btn-card .add i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.card-body .btn-card .n-card {
+  font-size: 22px;
+}
+
+.card-body .open-btn {
+  padding: 5px 2px;
+  margin: 5px 40px;
+  background-color: #FFFCF2;
+  border-radius: 15px;
+  font-family: Abhaya;
+  font-size: 20px;
 }
 
 dialog {
