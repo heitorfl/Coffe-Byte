@@ -1,26 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
 @import 'colors';
 
-header{
-    padding: 10px;
-    background-image: linear-gradient(to right,#000000b3, #ffffff00), url(../../assets/imagens/Imagem-Fundo.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
+
+body{
+    color: $white;
+}
+
+button{
+    cursor: pointer;
+}
+
+.title{
     display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-bottom: 1px solid $white;
+    margin: auto 30px 10px 30px;
+    border-radius: 2px;
+}
+
+.title h1{
+    font-size: 30px;
+    font-family: Abhaya;
+}
+
+.container{
+    margin: 10px 50px 10px 50px;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: right;
+    width: 1210px;
 }
 
-.navbar{
-    border: 1px solid red;
-    margin-left: 90vh;
+.btn-toggler{
+    padding: 50px 100px 50px 100px;
+    margin: 0 45px 0 45px;
 }
 
-.navbar-brand img{
-    width: 130px;
-    border: 1px solid red;
+.sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar ul li{
-    padding-left: 50px;
+.section{
+    margin: 0 40px 0 40px;
+}
+
+.card{
+    width: 350px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.card-img{
+    width: 100%;
+    height: 200px;   
+    overflow: hidden;
+    transition: 1s;
+}
+
+.card-img img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 349px;
+    height: 300px;
+}
+
+.card-body{
+    border: 1px solid $white;
+    padding: 10px;
+    margin-top: -5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column; 
+    z-index: 1;
+}
+
+.card-body h2{
+    border-bottom: 1px solid $white;
+    margin: 10px;
+}
+
+.card-body h3{
+    margin: 10px;
+    font-size: 24px;
+}
+
+.card-body p{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.card-body .btn-card{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10px 20px 10px 20px;
+    .calc{
+        display: inline-flex;
+        button{
+            padding: 11px 15px;
+            border-radius: 50%;
+            background-color: $white;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+    .add{
+        padding: 5px 30px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        justify-content: center;
+        i{
+            margin-left: 10px;
+            font-size: 20px;
+        }
+    }
+    .n-card{
+        font-size: 22px;
+    }
+    
+}
+
+.card-body .open-btn{
+    padding: 5px 2px;
+    margin: 5px 40px;
+    background-color: $white;
+    border-radius: 15px;
+    font-family: Abhaya;
+    font-size: 20px;
+}
+
+dialog{
+    position: fixed;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    width: 1200px;
+    height: 1400px;
+    background-color: $dark-gray;
+    justify-self: center;
+}
+
+dialog::backdrop{
+    background-color: black;
+    opacity: 50%;
+}
+
+.modal{
+    height: 500px;
+    display: flex;
+
+    .modal-img{
+        width: 4000px;
+    }
+
+    .modal-textos .header{
+        background-image: linear-gradient(to left, rgba(64, 44, 14, 0.407), #000408),url(../../assets/imagens/Imagem-Fundo.svg);
+        z-index: -1;
+        display: flex;
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+        width: 100%;
+        opacity: 10;
+
+        justify-content: left;
+        align-items: center;
+        color: $white;
+
+        img{
+            width: 100px;
+        }
+
+        .sair{
+            margin-left: 60%;
+
+            .esc{
+                background-color: black;
+                color: $caramel-01;
+                padding: 10px 15px;
+                border: 2px solid $caramel-01;
+                border-radius: 10px;
+            }
+
+        }
+
+    }
+    .modal-textos .m-principal{
+        color: $white;
+        padding: 25px;
+
+            .m-title{
+                border-bottom: 1px solid $white;
+                padding: 10px;
+                margin-bottom: 30px;
+            }
+            h3{
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            
+    }
+    .modal-textos .m-btns{
+        display: flex;
+        margin: 0 20px 0 20px;  
+        color: $white;
+        font-size: 25px;
+        
+        button{
+            padding: 18px 22px;
+        }
+        .minus, .plus{
+            background-color: $white;
+            border-radius: 50%;
+            margin: 0 20px 0 20px;
+        }
+        .add{
+            font-size: 15px;
+            background-color: transparent;
+            border: 2px solid $white;
+            color: $white;
+            padding: 0 30px 0 30px;
+            border-radius: 20px;
+        }
+        .cart{
+            border-radius: 40px;
+            background-color: $caramel-01;
+        }
+    }
+
 }
