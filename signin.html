@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/sass/style.css">
+</head>
+<body>
+    <div class="container-signin" id="imagem-fundo">
+        <div class="cadastro-signin" id="cadastro">
+            <h3>Criar conta</h3>
+            <form>
+               
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required> <br> <br>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha" required> <br>
+                <p id="erro">A senha precisa ter no mínimo 8 caracteres</p>
+                <p id="conta-criada">Sua conta foi criada com sucesso!</p>
+            </form>
+            <p>Já tem uma conta? <a href="login.html">Fazer login</a></p> 
+            <button type="button" class="btn" id="criar" onclick="criarConta()">Criar</button>
+            <div class="linhas">
+                <hr> <p>ou</p> <hr>
+            </div>
+               <div class="opcoes-login">
+                 <ul>
+                     <li><i class="fa-brands fa-facebook"></i> Entrar com Facebook</li>
+                     <li><i class="fa-brands fa-google"></i> Entrar com Google</li>
+                     <li><i class="fa-solid fa-cloud"></i> Entrar com Cloud</li>
+                 </ul>
+        </div>
+    </div>
+    <script src="./src/js/signin.js"></script>
+    <script src="https://kit.fontawesome.com/14cc984910.js" crossorigin="anonymous"></script>
+</body>
+</html>

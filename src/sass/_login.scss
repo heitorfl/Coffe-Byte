@@ -1,0 +1,206 @@
+@import 'colors';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    border: 0;
+}
+
+//cabecalho
+.cabecalho-login{
+    background-color: $dark-gray;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+
+//logo do cabecalho
+    .logo-login img{
+        width: 100px;
+    }
+
+//titulo login
+   h1{
+    color: $white;
+   }
+
+//botao de sing-in
+    .sign-in-btn{
+        background-color: $light-cream-04;
+        width: 120px;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 1rem;
+        color: $white;
+        transition: 500ms ;
+    }
+
+    .sign-in-btn:hover{
+        transform: translateY(-5px);
+        background-color: $white;
+        color: $dark-gray;
+    }
+}
+
+//imagem fundo do login e do sign in
+#imagem-fundo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(5, 3, 0, 0.689), #0004089c), url("../../assets/imagens/background-login-signin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 90%;
+    position: relative;
+    
+//cadastro para login e para sign in
+    #cadastro{
+        background-color: rgba(80, 78, 78, 0.463);
+        border: 3px solid $white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 400px;
+        height: 600px;
+        gap: 20px;
+        //titulo
+        h3{
+            color: $white;
+            font-size: 2rem;
+
+            text-align: center;
+        }
+
+        //formulario
+        form input{
+            width: 270px;
+            height: 50px;
+            border-radius: 10px;
+            padding: 0 10px;
+            background-color: rgba(116, 73, 33, 0.877);
+            border: 0;
+            color: $white;
+        }
+        input::placeholder{
+            color: $white;
+        }
+
+        input:focus{
+         outline: none;
+        }
+
+        //paragrafo de erro para o login e para o sign in
+        #erro{
+            color: red;
+            margin-top: 3px;
+            display: none;
+        }
+
+        //parte onde o usuario cria ou entra com sua conta
+        .criar-ou-enviar{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 20px;
+
+        //link de criar conta
+                 .esqueceu-senha{
+                color: $white;
+                text-decoration: underline;
+            }
+
+            .btn{
+                background-color: $light-cream-04;
+                width: 270px;
+                height: 40px;
+                border-radius: 10px;
+                font-size: 1rem;
+                color: $white;
+                transition: 500ms;
+                cursor: pointer;
+            }
+
+            .btn:hover{
+                transform: translateY(-5px);
+                background-color: $white;
+               color: $dark-gray;
+            }
+        }
+
+        //linhas que separam a parte dos inputs da parte login com apps
+        .linhas{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            p{
+                color: $white;
+            }
+
+            hr{
+                width: 150px;
+                height: 2px;
+            }
+        }
+
+        //parte do login com apps
+
+        .opcoes-login{
+            display: flex;
+            flex-direction: column;
+            
+            li{
+                border: 2px solid $white;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                color: $white;
+                cursor: pointer;
+                transition: 0.5s ease;
+            }
+            //icones das redes sociais
+            i{
+                margin-right: 6px;
+            }
+
+            li:hover{
+                background-color: $white;
+                color:  rgba(116, 73, 33, 0.877);
+                transform: scale(1.1);
+            }
+        }
+
+        //parte do link de criacao de conta, caso o usuario nao possua conta
+        .div-criar-conta{
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            
+            p{
+                color: $white;
+            }
+
+            .criar-conta{
+                color: $white;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+   
+}
+
+
+
+
+

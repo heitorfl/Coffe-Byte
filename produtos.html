@@ -5,247 +5,775 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
     <link rel="stylesheet" href="src/sass/style.css">
+    <link rel="shortcut icon" href="assets/imagens/favicon.svg" type="image/x-icon">
 </head>
-<body>
+<body class="b-products">
+    <header class="cabecalho-2">
+        <div class="brand">
+                <div class="brand-logo">
+                    <img src="assets/imagens/Logo.svg" alt="">
+                </div>
+                <div class="brand-text">
+                    <h2 class="brand-title">Coffe Byte</h2>
+                    <h3 class="brand-subtitle">Produtos</h3>
+                </div>
+        </div>
+        <nav class="navbar-2">
+            <ul>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="">Fundadores</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="">Suporte</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+
+           <section class="user">
+
+           </section>
+        </nav>  
+    </header>
     <main>
         <div class="title">
-            <h1>Produtos</h1>
+            <h1>Conheça nossos produtos!</h1>
         </div>
         <div class="produtos">
             <div class="container">
-                <div class="btns">
-                    <button class="btn-toggler">
-                        <p>clique aqui</p></button>
-                    <button class="btn-toggler">
-                        <p>clique aqui</p>
-                    </button>
-                    <button class="btn-toggler">
-                        <p>clique aqui</p>
-                    </button>
-                </div>
-                <div class="sections">
-                    
-                    <div class="section" id="sec1">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h2>Produto</h2>
-                                <h3>R$ 999,00</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi natus a dolor eveniet itaque consequuntur magni, saepe cupiditate sed. Impedit non recusandae voluptatum repellendus accusamus. Commodi repellendus est voluptatem!</p>
-                                <div class="btn-card">
-                                    <div class="calc">
-                                        <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                        <p class="n-card">1</p>
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                    </div>
+                
+                    <div class="sec-toggler">
+                        <div class="open active" id="open1">
+                            <h2>Cafés</h2>
+                        </div>
+                        <div class="open" id="open2">
+                            <h2>Acessórios</h2>
+                        </div>
+                        <div class="open" id="open3">
+                            <h2>Promoções</h2>
+                        </div>
+                    </div>
+                    <div class="sections">
+                        <div class="fade hide"></div>
+                        <div class="section">
 
-                                    <button class="add">Add <i class="fa-solid fa-plus"></i></button>
+                            <div class="card cafe active" onclick="toggleModal(1)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/produto-1.png" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Pacote de Grãos Debug</h2>
+                                    <h3>R$ 69.99</h3>
+                                    <p>Um pacote de café em grãos torrados, 100% arábica, com notas suaves de chocolate e nozes. Ideal para quem quer um café equilibrado para "desbugar" o dia.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h2>Produto</h2>
-                                <h3>R$ 999,00</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi natus a dolor eveniet itaque consequuntur magni, saepe cupiditate sed. Impedit non recusandae voluptatum repellendus accusamus. Commodi repellendus est voluptatem!</p>
-                                    <div class="btn-card">
-
+                            <div class="modal hide" id="1" base-price="69.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-1.png" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(1)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Pacote de Grãos Debug</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p> Um café artesanal de alta qualidade, composto por grãos 100% arábica torrados no ponto médio, proporcionando um equilíbrio entre acidez e doçura. Com notas de chocolate e nozes, é perfeito para quem aprecia um sabor suave e reconfortante. A embalagem, no estilo minimalista tecnológico, traz uma tabela de "debug" com informações sobre o sabor e o método ideal de preparo.</p>
+                                    </div>
+                                    <div class="m-btns">
                                         <div class="calc">
                                             <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                            <p class="n-card">1</p>
+                                            <p class="n-card" id="p1">1</p>
                                             <button class="plus"><i class="fa-solid fa-plus"></i></button>
                                         </div>
-
-                                        <button class="add">Add <i class="fa-solid fa-plus"></i></button>
+                                        <button class="add" onclick="addCart(1,'Pacote de grãos Debug')">Add <i class="fa-solid fa-basket-shopping"></i></button>
                                     </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h2>Produto</h2>
-                                <h3>R$ 999,00</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi natus a dolor eveniet itaque consequuntur magni, saepe cupiditate sed. Impedit non recusandae voluptatum repellendus accusamus. Commodi repellendus est voluptatem!</p>
-                                <div class="btn-card">
-                                    <div class="calc">
-                                        <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                        <p class="n-card">1</p>
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                    </div>
-
-                                    <button class="add">Add <i class="fa-solid fa-plus"></i></button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="section" id="sec2">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h2>Produto</h2>
-                                <h3>R$ 999,00</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi natus a dolor eveniet itaque consequuntur magni, saepe cupiditate sed. Impedit non recusandae voluptatum repellendus accusamus. Commodi repellendus est voluptatem!</p>
-                                <div class="btn-card">
-                                    <div class="calc">
-                                        <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                        <p class="n-card">1</p>
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                    </div>
 
-                                    <button class="add">Add <i class="fa-solid fa-plus"></i></button>
+                            <div class="card cafe active" onclick="toggleModal(2)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/produto-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Kernel Etíope</h2>
+                                    <h3>R$ 89.99</h3>
+                                    <p>Grãos frutados com notas de frutas cítricas e florais, conhecidos por sua complexidade e leveza.</p>                                    
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="assets/imagens/DALL·E-2024-12-16-17.40.jpeg" alt="">
-                            </div>
-                            <div class="card-body">
-                                <button class="open-btn" onclick="mostrar()">Ver modal</button>
-                                <dialog>
-                                    <div class="modal">
-                                        <div class="modal-img">
-                                            <img src="" alt="">
+                            <div class="modal hide" id="2" base-price="89.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-2.png" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(2)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Kernel Etíope</h1>
                                         </div>
-                                        <div class="modal-textos">
-                                            <div class="header">
-                                                <img src="assets/imagens/Logo.svg" alt="">
-                                                <h2>Coffe Byte</h2>
-                                                    <div class="sair">
-                                                        <button class="esc" onclick="fechar()">Back</button>
-                                                    </div>
-                                            </div>
-                                            <div class="m-principal">
-                                                <div class="m-title">
-                                                    <h1>Nome produto</h1>
-                                                </div>
-                                                <h3>R$ 999,00</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatibus quae, officiis sunt accusantium deserunt voluptate est dolore. Expedita libero provident ad ex officiis tempora. Quis sit amet fuga quos?
-                                                Natus consectetur minus, pariatur qui voluptate ea provident atque animi, doloribus exercitationem accusamus numquam hic, est harum vel minima. Cumque ut neque repellat fugit, velit aspernatur sapiente. Ut, neque sed?
-                                                Nemo maiores fugiat culpa ipsa ad atque iure voluptatem temporibus dolor! At, distinctio? Ullam assumenda quasi sint vitae? Reiciendis odio dicta eaque non perspiciatis ut rerum quos esse culpa quod!
-                                                Ipsum blanditiis corrupti fuga facere! Id explicabo cupiditate odit esse sunt quo amet debitis? Unde, voluptate obcaecati enim repellat, optio exercitationem deleniti sunt eos qui nemo dolore mollitia accusamus commodi!
-                                                Cupiditate iure maiores alias culpa ipsa reprehenderit qui, magnam harum, ea magni unde! Nostrum, distinctio omnis quaerat ducimus numquam voluptatem saepe. Itaque aut, soluta laudantium illo quibusdam unde. Impedit, ea!
-                                                Aut exercitationem aperiam unde officia aliquam eligendi dolor aspernatur nihil odio nisi maiores vitae nemo illo ipsam, eos tempore ut ipsum sapiente fugit blanditiis atque amet culpa? Ea, quod vero.</p>
-                                            </div>
-                                            <div class="m-btns">
-                                                    <button class="minus">-</button>
-                                                    <p class="n-card">1</p>
-                                                    <button class="plus">+</button>
-                                                    <button class="add">Add + </button>
-                                                    <button class="cart"></button>
-                                            </div>
+                                        <h3 class="price">R$ <span class="price-value"></span></h3>
+                                        <p>O <strong>Kernel Etíope</strong> traz o prestígio dos grãos da região de Yirgacheffe, na Etiópia. Com notas florais, cítricas e um toque de chá preto, esses grãos proporcionam um café leve e delicado. É a escolha perfeita para quem aprecia métodos filtrados como V60 e Chemex, onde a complexidade dos sabores é destacada.  </p>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
                                         </div>
+                                        <button class="add" onclick="addCart(2,'Kernel Etíope')">Add <i class="fa-solid fa-basket-shopping"></i></button>
                                     </div>
-                                </dialog>
-                                <h2>Produto</h2>
-                                <h3>R$ 999,00</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi natus a dolor eveniet itaque consequuntur magni, saepe cupiditate sed. Impedit non recusandae voluptatum repellendus accusamus. Commodi repellendus est voluptatem!</p>
-                                <div class="btn-card">
-                                    <div class="calc">
-                                        <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                        <p class="n-card">1</p>
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                    </div>
-
-                                    <button class="add">Add <i class="fa-solid fa-plus"></i></button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h2>Produto</h2>
-                                <h3>R$ 999,00</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi natus a dolor eveniet itaque consequuntur magni, saepe cupiditate sed. Impedit non recusandae voluptatum repellendus accusamus. Commodi repellendus est voluptatem!</p>
-                                <div class="btn-card">
-                                    <div class="calc">
-                                        <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                        <p class="n-card">1</p>
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                    </div>
 
-                                    <button class="add">Add <i class="fa-solid fa-plus"></i></button>
+                            <div class="card cafe active" onclick="toggleModal(3)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/produto-3.png" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Bit Colombiano</h2>
+                                    <h3>R$ 49.99</h3>
+                                    <p>Grãos de corpo médio e notas doces de caramelo e frutas vermelhas, perfeitos para cafés equilibrados. </p>                                    
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="section" id="sec3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h2>Produto</h2>
-                                <h3>R$ 999,00</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi natus a dolor eveniet itaque consequuntur magni, saepe cupiditate sed. Impedit non recusandae voluptatum repellendus accusamus. Commodi repellendus est voluptatem!</p>
-                                <div class="btn-card">
-                                    <div class="calc">
-                                        <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                        <p class="n-card">1</p>
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                            <div class="modal hide" id="3" base-price="49.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-3.png" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(3)">Back</button>
+                                            </div>
                                     </div>
-
-                                    <button class="add">Add <i class="fa-solid fa-plus"></i></button>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Bit Colombiano</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value"></span></h3>
+                                        <p>O <strong>Bit Colombiano</strong> é um café arábica supremo cultivado em altitudes elevadas na Colômbia. Seu perfil de sabor combina notas de caramelo, frutas vermelhas e uma acidez brilhante. É versátil e adequado tanto para espressos quanto para métodos de preparo manuais, oferecendo uma experiência de sabor rica e encorpada.</p>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add" onclick="addCart(3,'Bit Colombiano')">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h2>Produto</h2>
-                                <h3>R$ 999,00</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi natus a dolor eveniet itaque consequuntur magni, saepe cupiditate sed. Impedit non recusandae voluptatum repellendus accusamus. Commodi repellendus est voluptatem!</p>
-                                <div class="btn-card">
-                                    <div class="calc">
-                                        <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                        <p class="n-card">1</p>
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                    </div>
 
-                                    <button class="add">Add <i class="fa-solid fa-plus"></i></button>
+                            <div class="card cafe active" onclick="toggleModal(4)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/produto-4.png" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Overclock Sumatra</h2>
+                                    <h3>R$ 39.99</h3>
+                                    <p>Grãos intensos com notas de especiarias, terra e um corpo encorpado, ideais para quem gosta de cafés fortes.</p>                                    
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h2>Produto</h2>
-                                <h3>R$ 999,00</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi natus a dolor eveniet itaque consequuntur magni, saepe cupiditate sed. Impedit non recusandae voluptatum repellendus accusamus. Commodi repellendus est voluptatem!</p>
-                                <div class="btn-card">
-                                    <div class="calc">
-                                        <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                        <p class="n-card">1</p>
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                    </div>
 
-                                    <button class="add">Add <i class="fa-solid fa-plus"></i></button>
+                            <div class="modal hide" id="4" base-price="39.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-4.png" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(4)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Overclock Sumatra</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>O <strong>Overclock Sumatra</strong> é um café robusto e encorpado, originário da região de Mandheling, na Indonésia. Suas notas de especiarias, terra úmida e cacau tornam-no perfeito para métodos de preparo como prensa francesa ou espresso. É um grão para quem busca uma explosão de sabor e intensidade.  
+                                        </p>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add" onclick="addCart(4,'Overclock Sumatra')">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+
+                            <div class="card cafe active" onclick="toggleModal(5)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/produto-5.png" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Circuito da Guatemala</h2>
+                                    <h3>R$ 79.99</h3>
+                                    <p>Grãos com notas de chocolate amargo e frutas secas, conhecidos por sua doçura natural e corpo sedoso.</p>
+
+                                </div>
+                            </div>
+                            
+                            <div class="modal hide" id="5" base-price="79.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-5.png" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(5)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Circuito da Guatemala</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>O <strong>Circuito da Guatemala</strong> é cultivado na região de Antigua, famosa por seus grãos de qualidade excepcional. Oferece um perfil de sabor encorpado, com notas de chocolate amargo, frutas secas e uma leve acidez cítrica. Um café elegante que se destaca em métodos como espresso e Aeropress.</p>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add" onclick="addCart(5,'Circuito da Guatemala')">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card cafe active" onclick="toggleModal(6)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/produto-6.jpeg" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Pixel do Quênia</h2>
+                                    <h3>R$ 109.99</h3>
+                                    <p>Grãos vibrantes com notas de frutas vermelhas, vinho tinto e uma acidez marcante, ideais para paladares sofisticados.</p>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="modal hide" id="6" base-price="109.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-6.jpeg" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(6)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Pixel do Quênia</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>O <strong>Pixel do Quênia</strong> é um café premium da classificação AA, conhecida por sua alta qualidade. Seus grãos possuem uma acidez brilhante e notas frutadas que lembram frutas vermelhas e vinho tinto. Ideal para métodos que destacam a complexidade, como V60 ou Kalita, proporcionando uma experiência única e sofisticada.</p>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add" onclick="addCart(6,'Pixel do Quênia')">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card acc" onclick="toggleModal(7)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/DALL·E-2024-12-16-17.40.jpeg" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Produto</h2>
+                                    <h3>R$ 999,00</h3>
+                                    
+
+                                    
+                                </div>
+                            </div>
+                            <div class="modal hide" id="7" base-price="109.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-1.png" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(7)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Pixel do Quênia</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>O <strong>Pixel do Quênia</strong> é um café premium da classificação AA, conhecida por sua alta qualidade. Seus grãos possuem uma acidez brilhante e notas frutadas que lembram frutas vermelhas e vinho tinto. Ideal para métodos que destacam a complexidade, como V60 ou Kalita, proporcionando uma experiência única e sofisticada.</p>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card acc" onclick="toggleModal(8)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/DALL·E-2024-12-16-17.40.jpeg" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Produto</h2>
+                                    <h3>R$ 999,00</h3>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="modal hide" id="8" base-price="109.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-1.png" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(8)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Pixel do Quênia</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>O <strong>Pixel do Quênia</strong> é um café premium da classificação AA, conhecida por sua alta qualidade. Seus grãos possuem uma acidez brilhante e notas frutadas que lembram frutas vermelhas e vinho tinto. Ideal para métodos que destacam a complexidade, como V60 ou Kalita, proporcionando uma experiência única e sofisticada.</p>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card acc" onclick="toggleModal(9)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/DALL·E-2024-12-16-17.40.jpeg" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Produto</h2>
+                                    <h3>R$ 999,00</h3>
+                                    
+
+                                    
+                                </div>
+                            </div>
+                            <div class="modal hide" id="9" base-price="109.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-1.png" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(9)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Pixel do Quênia</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>O <strong>Pixel do Quênia</strong> é um café premium da classificação AA, conhecida por sua alta qualidade. Seus grãos possuem uma acidez brilhante e notas frutadas que lembram frutas vermelhas e vinho tinto. Ideal para métodos que destacam a complexidade, como V60 ou Kalita, proporcionando uma experiência única e sofisticada.</p>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card acc" onclick="toggleModal(10)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/DALL·E-2024-12-16-17.40.jpeg" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Produto</h2>
+                                    <h3>R$ 999,00</h3>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="modal hide" id="10" base-price="109.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-1.png" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(10)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Pixel do Quênia</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>O <strong>Pixel do Quênia</strong> é um café premium da classificação AA, conhecida por sua alta qualidade. Seus grãos possuem uma acidez brilhante e notas frutadas que lembram frutas vermelhas e vinho tinto. Ideal para métodos que destacam a complexidade, como V60 ou Kalita, proporcionando uma experiência única e sofisticada.</p>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card acc" onclick="toggleModal(11)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/DALL·E-2024-12-16-17.40.jpeg" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Produto</h2>
+                                    <h3>R$ 999,00</h3>
+                                    
+
+                                    
+                                </div>
+                            </div>
+                            <div class="modal hide" id="11" base-price="109.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-1.png" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(11)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Pixel do Quênia</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>O <strong>Pixel do Quênia</strong> é um café premium da classificação AA, conhecida por sua alta qualidade. Seus grãos possuem uma acidez brilhante e notas frutadas que lembram frutas vermelhas e vinho tinto. Ideal para métodos que destacam a complexidade, como V60 ou Kalita, proporcionando uma experiência única e sofisticada.</p>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card acc" onclick="toggleModal(12)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/DALL·E-2024-12-16-17.40.jpeg" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Produto</h2>
+                                    <h3>R$ 999,00</h3>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="modal hide" id="12" base-price="109.99">
+                                <div class="modal-img">
+                                    <img src="assets/imagens/produto-1.png" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(12)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Pixel do Quênia</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>O <strong>Pixel do Quênia</strong> é um café premium da classificação AA, conhecida por sua alta qualidade. Seus grãos possuem uma acidez brilhante e notas frutadas que lembram frutas vermelhas e vinho tinto. Ideal para métodos que destacam a complexidade, como V60 ou Kalita, proporcionando uma experiência única e sofisticada.</p>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card others" onclick="toggleModal(13)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/DALL·E-2024-12-16-17.40.jpeg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h2>Ciclo do Circuito</h2>
+                                    <p>Programa de fidelidade: a cada 10 cafés comprados, o cliente ganha um pacote de grãos torrados ou um café grande gratuito.</p>
+                                    </ul>    
+                                </div>
+                            </div>
+
+                            <div class="modal sale hide" id="13">
+                                <div class="modal-img">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(13)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Ciclo do Circuito</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>Programa de fidelidade: a cada 10 cafés comprados, o cliente ganha um pacote de grãos torrados ou um café grande gratuito.</p>
+                                        <ul>
+                                            <li>Como funciona</li>
+                                                <ul>
+                                                    <li>Cada vez que o cliente compra um café, ele acumula 1 ponto.</li>
+                                                    <li>Após completar 10 pontos (ou seja, 10 cafés comprados), o cliente ganha uma recompensa especial.</li>
+                                                </ul>
+                                            <li>Recompensas Disponíveis</li>
+                                                <ul>
+                                                    <li>Um pacote de grãos de café torrados (ideal para preparo em casa).</li>
+                                                    <li>Ou um café grande gratuito da sua escolha no local.</li>
+                                                </ul>
+                                            <li>Observações</li>
+                                                <ul>
+                                                    <li>O cliente pode escolher entre as duas opções de recompensa.</li>
+                                                    <li>A contagem de pontos é feita no sistema de fidelidade da loja ou por um cartão de fidelidade carimbado/manual.</li>
+                                                    <li>Os pontos não expiram, mas são limitados a uma troca por período definido (se houver alguma política específica).</li>
+                                                </ul>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card others" onclick="toggleModal(14)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/DALL·E-2024-12-16-17.40.jpeg" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Grão Hacker</h2>
+                                    <p>Desconto de em pacotes de café em grãos nas terças-feiras.</p>
+                                </div>
+                            </div>
+
+                            <div class="modal sale hide" id="14">
+                                <div class="modal-img">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(14)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Ciclo do Circuito</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>Todas as terças-feiras, clientes têm direito a 20% de desconto na compra de pacotes de café em grãos.</p>
+                                        <ul>
+                                            <li>Como Participar:</li>
+                                                <ul>
+                                                    <li>Para aproveitar o desconto, o cliente precisa mencionar a "senha secreta" válida para a semana.</li>
+                                                    <li>A senha secreta é divulgada exclusivamente nas redes sociais da loja, incentivando os seguidores a ficarem atentos às postagens.</li>
+                                                </ul>
+                                            <li>Regras e Observações:</li>
+                                                <ul>
+                                                    <li>A promoção é válida apenas para pacotes de café em grãos (não inclui outras categorias de produtos).</li>
+                                                    <li>A senha deve ser mencionada no momento da compra, seja presencialmente ou online (caso aplicável).</li>
+                                                    <li>O desconto não é cumulativo com outras promoções ou benefícios do programa de fidelidade.</li>
+                                                    <li>A senha é alterada semanalmente, garantindo um toque de diversão e exclusividade para os participantes.</li>
+                                                </ul>
+                                    </div>
+                                    <div class="m-btns">
+                                        <div class="calc">
+                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <p class="n-card" id="p1">1</p>
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="add">Add <i class="fa-solid fa-basket-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card others" onclick="toggleModal(15)">
+                                <div class="card-img">
+                                    <img src="assets/imagens/DALL·E-2024-12-16-17.40.jpeg" alt="">
+                                </div>
+                                <div class="card-body">
+                        
+                                    <h2>Café do Mês</h2>
+                                    <p>Escolhemos um grão especial como "Café do Mês" e oferecemos benefícios exclusivos para os clientes durante todo o período.</p>
+                                </div>
+                            </div>
+
+                            <div class="modal sale hide" id="15">
+                                <div class="modal-img">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="modal-textos">
+                                    <div class="header">
+                                        <img src="assets/imagens/Logo.svg" alt="">
+                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                            <div class="sair">
+                                                <button class="esc" onclick="toggleModal(15)">Back</button>
+                                            </div>
+                                    </div>
+                                    <div class="m-principal">
+                                        <div class="m-title">
+                                            <h1>Café do Mês</h1>
+                                        </div>
+                                        <h3 class="price">R$ <span class="price-value">69.99</span></h3>
+                                        <p>Escolhemos um grão especial como "Café do Mês" e oferecemos benefícios exclusivos para os clientes durante todo o período.</p>
+                                        <ul class="p-lista">
+                                            <li>Benefícios do Café do Mês:</li>
+                                                <ol>
+                                                    <li>Desconto Exclusivo</li>
+                                                        <ul>
+                                                            <li>15% de desconto na compra do pacote de grãos do Café do Mês.</li>
+                                                        </ul>
+                                                    <li>Degustação Gratuita:</li>
+                                                        <ul>
+                                                            <li>Clientes podem experimentar uma pequena dose do Café do Mês gratuitamente nos finais de semana.
+                                                            </li>
+                                                        </ul>
+                                                    <li>Pontos Extras no Programa de Fidelidade:</li>
+                                                        <ul>
+                                                            <li>Cada compra do pacote do Café do Mês gera 2 pontos no programa de fidelidade (em vez de 1).
+                                                            </li>
+                                                        </ul>
+                                                </ol>
+                                            <li>Engajamento com os Clientes:</li>
+                                                <ul>
+                                                    <li>A promoção do Café do Mês é divulgada nas redes sociais, com dicas sobre as notas sensoriais do grão, sua origem, e sugestões de preparo.</li>
+                                                    <li>Um dia especial de "Sabor e Aprendizado" pode ser organizado, onde os clientes aprendem sobre o Café do Mês com baristas da loja.</li>
+                                                </ul>
+                                            <li>Regras e Observações:</li>
+                                                <ul>
+                                                    <li>Benefícios válidos apenas durante o mês em questão.</li>
+                                                    <li>Promoção disponível enquanto durar o estoque do Café do Mês.</li>
+                                                    <li>Degustações limitadas a uma por cliente por dia.</li>
+                                                </ul>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>                        
                     </div>
                 </div>
-            </div>
         </div>
     </main>
+
+    <!--Rodapé-->
+    <footer>
+        <div class="f-brand">
+            <div class="img-brand">
+                <img src="assets/imagens/Logo.svg" alt="">
+            </div>
+            <div class="text-brand">
+                <h3>Coffe Byte</h3>
+                <p>Alimentando ideias, aquecendo corações...</p>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="phone-num">
+                <ul>
+                    <li>(34) 99134-3530</li>
+                    <li>(34) 98891-6134</li>
+                    <li>(34) 99820-1646</li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                <a href=""><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://kit.fontawesome.com/803e48205f.js" crossorigin="anonymous"></script>
-    <script src="src/js/script.js"></script>
+    <script src="./src/js/produtos.js"></script>
+    <script src="./src/js/carrinho.js"></script>
 </body>
 </html>
