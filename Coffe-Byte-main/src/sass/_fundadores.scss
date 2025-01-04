@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+@import 'colors';
+
+.foto-bytes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-bytes img{
+    width: 550px;
+    margin: 50px;
+}
+
+.texto-bytes{
+    background-color: $gray;
+    margin: 0px 40px 40px 40px;
+    border-radius: 30px;
+}
+
+.nome-bytes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 40px 0px 40px;
+}
+
+.bio-bytes{
+    padding: 40px;
+    text-align: justify;
+}
+
+.fundadores{
+    margin: 40px;
+}
+
+.card-fond{
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.foto-fond img{
+    width: 300px;
+    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.cont-fond{
+    background-color: $gray;
+    width: 80%;
+    height: 300px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    
+}
+
+.nome-card{
+    border-bottom: 1px solid $white;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+.bio-card{
+    padding-top: 20px;
+    text-align: justify;
+}
+
+@media (max-width: 480px){
+
+    .foto-bytes img{
+        width: 320px;
+    }
+
+    .card-fond{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto-fond{
+        height: 320px;
+    }
+
+    .foto-fond img{ 
+        width: 320px;
+
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .cont-fond{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        width: 320px;
+        height: 350px;
+    }
+
+    .nome-card{
+        width: 180px;
+    }
+}
