@@ -729,33 +729,12 @@ button {
   border: 0;
 }
 
-.cabecalho-login {
-  background-color: #252422;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 30px;
-}
-.cabecalho-login .logo-login img {
+.logo-login img {
   width: 100px;
 }
-.cabecalho-login h1 {
+
+h1 {
   color: #FFFCF2;
-}
-.cabecalho-login .sign-in-btn {
-  background-color: #D4A276;
-  width: 120px;
-  height: 40px;
-  border-radius: 10px;
-  font-size: 1rem;
-  color: #FFFCF2;
-  transition: 500ms;
-}
-.cabecalho-login .sign-in-btn:hover {
-  transform: translateY(-5px);
-  background-color: #FFFCF2;
-  color: #252422;
 }
 
 #imagem-fundo {
@@ -882,6 +861,12 @@ button {
   text-decoration: underline;
 }
 
+@media (max-width: 480px) {
+  #imagem-fundo #cadastro {
+    background-color: transparent;
+    border: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -1044,7 +1029,7 @@ button {
 }
 
 .card {
-  width: 340px;
+  width: 335px;
   height: 250px;
   margin: 30px;
   border-radius: 20px;
