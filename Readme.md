@@ -20,7 +20,7 @@
 
 <h3>🎯 Objetivo do Projeto</h3>
 <p>O objetivo do Coffe Byte é oferecer um site onde os usuários possam conhecer
-melhor sobre a cafeteria e adquirir seus produtos e acessórios.
+melhor sobre a cafeteria, conferir e adquirir seus produtos e acessórios.
 </p> 
 
 <h3> 🚀 Funcionalidades</h3>
