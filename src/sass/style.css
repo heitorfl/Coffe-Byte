@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
 * {
@@ -899,6 +901,707 @@ h1 {
   color: #252422;
 }
 
+.b-products {
+  color: #FFFCF2;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Abhaya";
+}
+
+/*Cabeçalho*/
+.cabecalho-2 {
+  background-image: linear-gradient(90deg, black, black, transparent, transparent), url(../../assets/imagens/imagem-home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-flex;
+}
+
+.cabecalho-2 .brand {
+  display: flex;
+}
+
+.cabecalho-2 .brand .brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cabecalho-2 .brand .brand-text .brand-title {
+  font-family: "Abhaya";
+  font-size: 28px;
+}
+
+.cabecalho-2 .brand .brand-text .brand-subtitle {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.cabecalho-2 .brand img {
+  width: 90px;
+}
+
+.cabecalho-2 .navbar-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cabecalho-2 .navbar-2 ul {
+  display: flex;
+}
+
+.cabecalho-2 .navbar-2 ul li a {
+  margin: 0 15px 0 15px;
+  text-decoration: none;
+  color: #FFFCF2;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  margin: 30px 70px 0 70px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 1px black;
+  background-image: linear-gradient(90deg, black, transparent, black), url(../../assets/imagens/parallax-fundo-produtos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.title h1 {
+  font-size: 40px;
+  font-family: "Abhaya";
+  padding: 10px;
+  border-top: 2px solid #FFFCF2;
+  border-bottom: 2px solid #FFFCF2;
+}
+
+.container {
+  margin: 0 50px 10px 50px;
+}
+
+.produtos {
+  margin-top: 0;
+}
+
+.sec-toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 20px 10px 20px;
+  border-bottom: 3px solid #E7BC91;
+  border-radius: 15px;
+}
+
+.sec-toggler .open {
+  display: flex;
+  padding: 20px 50px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-bottom: 3px solid transparent;
+  opacity: 0.7;
+}
+
+.sec-toggler .open.active {
+  background-color: #403D39;
+  transform: scale(1.1);
+  border-bottom: 3px solid #BC8A5F;
+  opacity: 1;
+}
+
+.sec-toggler .open:hover {
+  color: #F3D5B5;
+  text-decoration: underline;
+}
+
+.sections {
+  display: flex;
+  flex-direction: row;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1100px;
+}
+
+.card {
+  width: 335px;
+  height: 250px;
+  margin: 30px;
+  border-radius: 20px;
+  display: none;
+  transition: 800ms;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.active {
+  display: block;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.card-img img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 349px;
+  height: 300px;
+}
+
+.card-body {
+  font-family: "Abhaya";
+  border: 1px solid #FFFCF2;
+  padding: 10px;
+  margin-top: -5px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  padding: 30px;
+  height: 250px;
+  box-shadow: 0px 5px 10px 1px black;
+}
+
+.card-body h2 {
+  border-bottom: 1px solid #FFFCF2;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.card-body h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 18px;
+}
+
+.card-body .btn-card {
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-body .btn-card .calc {
+  display: inline-flex;
+  align-items: center;
+}
+.card-body .btn-card .calc button {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #FFFCF2;
+  font-size: 20px;
+  text-align: center;
+  transition: 0.2s;
+}
+.card-body .btn-card .calc button:hover {
+  transform: scale(1.05);
+}
+.card-body .btn-card .add {
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #FFFCF2;
+  color: #FFFCF2;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+  transition: 0.3s;
+  font-family: "Abhaya";
+}
+.card-body .btn-card .add i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.card-body .btn-card .add:hover {
+  background-color: #8B5E34;
+  border: 1px solid #A47148;
+  transform: scale(1.07);
+}
+.card-body .btn-card .n-card {
+  margin: 0 10px;
+  font-size: 26px;
+}
+
+.fade, .modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 1000px;
+  height: 625px;
+  max-width: 90%;
+  background-color: #252422;
+  border-radius: 20px;
+  z-index: 5;
+}
+.modal .modal-img {
+  display: flex;
+  justify-content: center;
+  width: 2700px;
+  filter: brightness(70%);
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.modal .modal-textos .header {
+  background-image: linear-gradient(to left, rgba(64, 44, 14, 0.407), #000408), url(../../assets/imagens/imagem-home.png);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: #FFFCF2;
+}
+.modal .modal-textos .header img {
+  width: 100px;
+}
+.modal .modal-textos .header .m-header-title {
+  display: flex;
+  border: none;
+  width: 200px;
+  align-items: center;
+  font-size: 25px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.modal .modal-textos .header .sair {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.modal .modal-textos .header .sair .esc {
+  background-color: black;
+  color: #A47148;
+  padding: 10px;
+  width: 70px;
+  border: 2px solid #A47148;
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.modal .modal-textos .header .sair .esc:hover {
+  transform: scale(1.1);
+  background-color: #A47148;
+  color: #FFFCF2;
+  font-weight: 700;
+  cursor: pointer;
+}
+.modal .modal-textos .m-principal {
+  height: 65%;
+  color: #FFFCF2;
+  padding: 25px;
+}
+.modal .modal-textos .m-principal .m-title {
+  border-bottom: 2px solid #FFFCF2;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.modal .modal-textos .m-principal h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.modal .modal-textos .m-principal p {
+  font-size: 20px;
+  font-family: "Abhaya";
+}
+.modal .modal-textos .m-btns {
+  display: flex;
+  font-family: "Abhaya";
+  justify-content: center;
+  color: #FFFCF2;
+  font-size: 25px;
+}
+.modal .modal-textos .m-btns button {
+  padding: 18px 22px;
+  cursor: pointer;
+}
+.modal .modal-textos .m-btns .calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+.modal .modal-textos .m-btns .calc .minus, .modal .modal-textos .m-btns .calc .plus {
+  background-color: #FFFCF2;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.modal .modal-textos .m-btns .calc .n-card {
+  font-size: 23px;
+  margin: 0 20px;
+}
+.modal .modal-textos .m-btns .calc .minus:hover, .modal .modal-textos .m-btns .calc .plus:hover {
+  transform: scale(1.05);
+}
+.modal .modal-textos .m-btns .add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Abhaya";
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #A47148;
+  color: #FFFCF2;
+  width: 150px;
+  border-radius: 30px;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+.modal .modal-textos .m-btns .add i {
+  margin-left: 10px;
+  font-size: 23px;
+}
+.modal .modal-textos .m-btns .add:hover {
+  transform: scale(1.05);
+  background-color: #8B5E34;
+}
+
+.modal.sale {
+  overflow-y: scroll;
+}
+.modal.sale .price {
+  display: none;
+}
+.modal.sale .modal-img {
+  display: none;
+}
+.modal.sale .m-btns {
+  display: none;
+}
+.modal.sale .p-lista {
+  padding-bottom: 20px;
+}
+.modal.sale ul {
+  margin: 10px 0 10px 15px;
+}
+.modal.sale ul ul {
+  padding-left: 20px;
+}
+.modal.sale ul li {
+  list-style: disc;
+  font-size: 20px;
+}
+.modal.sale ol {
+  margin: 10px 0 10px 15px;
+  padding-left: 20px;
+}
+.modal.sale ol li {
+  list-style: decimal;
+}
+.modal.sale ol ul li {
+  list-style: disc;
+}
+
+.modal.hide {
+  top: 2000px;
+  pointer-events: none;
+}
+
+.fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  background-image: url(../../assets/imagens/Footer-Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -150px;
+  z-index: 1;
+}
+
+.f-brand {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.f-brand .img-brand {
+  margin: 20px;
+}
+.f-brand .img-brand img {
+  width: 140px;
+}
+
+.f-brand .text-brand h3 {
+  font-size: 40px;
+  border-bottom: 1px solid #FFFCF2;
+  padding: 10px 10px 10px 0;
+}
+.f-brand .text-brand p {
+  font-size: 18px;
+  padding: 10px 10px 10px 0;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.contacts .phone-num {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+  border-right: 1px solid #FFFCF2;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.contacts .phone-num li {
+  list-style: disc;
+  padding: 10px;
+}
+
+.contacts .social-media {
+  display: flex;
+  flex-direction: column;
+}
+.contacts .social-media a {
+  color: #FFFCF2;
+}
+.contacts .social-media i {
+  font-size: 30px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 391px) {
+  .title {
+    background-size: contain;
+    width: 90%;
+    margin: 20px 20px;
+  }
+  .title h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .sec-toggler {
+    margin: 0px;
+    border-radius: 0;
+  }
+  .sec-toggler .open {
+    font-size: 16px;
+    padding: 15px;
+  }
+  .section {
+    height: auto;
+  }
+  .card {
+    width: 300px;
+    margin: 30px 0px 300px 0px;
+  }
+  .card .card-body {
+    height: 300px;
+  }
+}
+.b-carrinho {
+  color: #FFFCF2;
+  font-family: "Abhaya";
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-width: 100vw;
+}
+
+.cabecalho-2 {
+  background-image: linear-gradient(90deg, black, black, transparent, transparent), url(../../assets/imagens/imagem-home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-flex;
+}
+
+.cabecalho-2 .brand {
+  width: 50vw;
+  display: flex;
+}
+
+.cabecalho-2 .brand .brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cabecalho-2 .brand .brand-text .brand-title {
+  font-family: "Abhaya";
+  font-size: 28px;
+}
+
+.cabecalho-2 .brand .brand-text .brand-subtitle {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.cabecalho-2 .brand img {
+  width: 90px;
+}
+
+.cabecalho-2 .navbar-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50vw;
+}
+
+.cabecalho-2 .navbar-2 ul {
+  display: flex;
+}
+
+.cabecalho-2 .navbar-2 ul li a {
+  margin: 0 15px 0 15px;
+  text-decoration: none;
+  color: #FFFCF2;
+}
+
+.cart .main-title {
+  display: grid;
+  place-content: center;
+  margin: 30px;
+}
+
+.cart-title {
+  font-size: 50px;
+  border-top: 1px solid #FFFCF2;
+  border-bottom: 1px solid #FFFCF2;
+  margin: 30px 10px;
+  padding: 10px;
+}
+
+.cart-products-title {
+  font-size: 30px;
+  margin: 10px 50px;
+  padding: 5px;
+  border-bottom: 1px solid #FFFCF2;
+}
+
+.section-cart {
+  margin: 10px 50px;
+}
+
+.empty-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 70px;
+}
+
+.item-cart {
+  padding: 20px;
+  background-color: #403D39;
+  margin: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-cart .product-text {
+  display: flex;
+  flex-direction: column;
+}
+.item-cart .product-text .product-title {
+  font-size: 32px;
+  padding: 10px;
+  margin: 5px 10px;
+}
+.item-cart .product-text .product-price-text {
+  font-size: 27px;
+  padding: 10px;
+  margin: 5px 10px;
+}
+.item-cart .product-text .product-price {
+  font-size: 27px;
+  margin: 5px 10px;
+  color: #E7BC91;
+}
+
+.item-cart .product-btn .remove-cart {
+  background-color: transparent;
+  margin: 5px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.item-cart .product-btn .remove-cart i {
+  font-size: 30px;
+  color: #E7BC91;
+}
+.item-cart .product-btn .remove-cart:hover {
+  transform: translateY(-8px)scale(1.1);
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #403D39;
+  margin-top: 104px;
+  width: 100vw;
+}
+
+.payment .total-price {
+  padding: 20px;
+  font-size: 20px;
+}
+.payment .total-price #priceDiv {
+  color: #E7BC91;
+}
+
+.payment .payment-btn {
+  padding: 20px;
+}
+.payment .payment-btn button {
+  font-family: "Abhaya";
+  background-color: #A47148;
+  padding: 20px;
+  color: #FFFCF2;
+  font-size: 18px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.payment .payment-btn button:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+  border: 1px solid #BC8A5F;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -915,4 +1618,14 @@ li {
 
 a {
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  background-color: #252422;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #403D39;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
