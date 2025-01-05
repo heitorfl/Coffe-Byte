@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
 
-
 @import 'home';
 @import 'colors';
 @import 'login';
 @import 'signin';
+@import 'products';
+@import 'carrinho';
+
 
 *{
     margin: 0;
@@ -22,4 +24,14 @@ li{
 
 a{
     text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    background-color: $dark-gray;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $gray;
+    border-radius: 20px;
 }
