@@ -446,84 +446,14 @@ button{
     }
 }
 
-//rodapé da pagina 
+//rodapé da pagina  
+
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 300px;
-    background-image: url("../../assets/imagens/Footer-Background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 70% 60%;
-    z-index: 1;
+    color: $white;
 }
 
-.f-brand{
-    display: flex;
-    align-items: center;
-}
-
-.f-brand .img-brand{
-    margin: 20px;
-    img{
-        width: 140px;
-    }
-}
-
-.f-brand .text-brand{
-    h3{
-        color: $white;
-        font-size: 2.7rem;
-        border-bottom: 1px solid $white;
-        padding: 10px 10px 10px 0;
-    }
-    p{
-        color: $white;
-        font-size: 1.5rem;
-        padding: 10px 10px 10px 0;
-    }
-}
-
-.contacts{
-    display: flex;
-    align-items: center;
-    margin: 20px;
-
-    hr{
-        height: 250px;
-    }
-}
-
-.contacts .phone-num{
-    li{
-        list-style: disc;
-        padding: 10px;
-        color: $white;
-    }
-
-    font-size: 25px;
-    font-weight: 700;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.contacts .social-media{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-left: 10px;
-
-    a{
-        color: $white;
-        transition: 0.5s;
-    }
-
-    i{
-        font-size: 36px;
-        padding: 5px;
-    }
+.contacts .social-media i, .contacts .social-media a{
+    transition: 0.3s;
 }
 
 .contacts .social-media a:hover{
@@ -577,12 +507,12 @@ footer{
         justify-content: end;
     }
     
-        .btn-abrir-menu i{
-            display: block;
-            color: $white;
-            font-size: 40px;
-            margin-right: 300px;
-        }
+    .btn-abrir-menu#btn-menu i{
+        display: block;
+        color: $white;
+        font-size: 40px;
+        margin-right: 300px;
+    }
 
     .navbar{
         display: none;
