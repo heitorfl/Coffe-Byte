@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
+    <title>Cardápio</title>
     <link rel="stylesheet" href="src/sass/style.css">
     <link rel="shortcut icon" href="assets/imagens/favicon.svg" type="image/x-icon">
 </head>
@@ -15,7 +15,7 @@
                 </div>
                 <div class="brand-text">
                     <h2 class="brand-title">Coffe Byte</h2>
-                    <h3 class="brand-subtitle">Produtos</h3>
+                    <h3 class="brand-subtitle">Cardápio</h3>
                 </div>
         </div>
         <nav class="navbar-2">
@@ -43,18 +43,18 @@
         <div class="overlay-menu" id="overlay-menu"></div>
     </header>
     <main>
-        <div class="title">
-            <h1>Conheça nossos produtos!</h1>
+        <div class="title cardapio-parallax">
+            <h1>Saboreie nosso cardápio!</h1>
         </div>
         <div class="produtos">
             <div class="container">
                 
                     <div class="sec-toggler">
                         <div class="open active" id="open1">
-                            <h2>Grãos</h2>
+                            <h2>Cafés</h2>
                         </div>
                         <div class="open" id="open2">
-                            <h2>Acessórios</h2>
+                            <h2>Lanches</h2>
                         </div>
                         <div class="open" id="open3">
                             <h2>Promoções</h2>
@@ -66,33 +66,35 @@
 
                             <div class="card cafe active" onclick="toggleModal(1)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-1.png" alt="">
+                                    <img src="assets/imagens/cardapio-1.png" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Pacote de Grãos Debug</h2>
-                                    <h3>R$ 69.99</h3>
-                                    <p>Um pacote de café em grãos torrados, 100% arábica, com notas suaves de chocolate e nozes. Ideal para quem quer um café equilibrado para "desbugar" o dia.</p>
+                                    <h2>Java Script</h2>
+                                    <h3>R$ 14.99</h3>
+                                    <p>Energia para programadores! O Java Script combina o sabor forte do espresso com chocolate e leite vaporizado, perfeito para horas de codificação.</p>
                                 </div>
                             </div>
-                            <div class="modal hide" id="1" base-price="69.99">
+                            <div class="modal hide" id="1" base-price="14.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-1.png" alt="">
+                                    <img src="assets/imagens/cardapio-1.png" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(1)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Pacote de Grãos Debug</h1>
+                                            <h1>Java Script</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p> Um café artesanal de alta qualidade, composto por grãos 100% arábica torrados no ponto médio, proporcionando um equilíbrio entre acidez e doçura. Com notas de chocolate e nozes, é perfeito para quem aprecia um sabor suave e reconfortante. A embalagem, no estilo minimalista tecnológico, traz uma tabela de "debug" com informações sobre o sabor e o método ideal de preparo.</p>
+                                        <p>O <strong>Java Script</strong> é uma homenagem ao café dos programadores. Seu sabor forte vem de um espresso bem tirado, equilibrado com o toque aveludado do leite vaporizado e a intensidade da calda de chocolate meio amargo. Finalizado com chantilly e raspas de chocolate, é perfeito para quem precisa de foco e inspiração enquanto escreve códigos ou resolve bugs.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -107,33 +109,35 @@
 
                             <div class="card cafe active" onclick="toggleModal(2)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-2.png" alt="">
+                                    <img src="assets/imagens/cardapio-2.png" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Kernel Etíope</h2>
-                                    <h3>R$ 89.99</h3>
-                                    <p>Grãos frutados com notas de frutas cítricas e florais, conhecidos por sua complexidade e leveza.</p>                                    
+                                    <h2>Byte Latte</h2>
+                                    <h3>R$ 16.99</h3>
+                                    <p>Um clássico reinventado. O Byte Latte é um latte doce e suave, com notas de caramelo e uma pitada de canela.</p>                                   
                                 </div>
                             </div>
-                            <div class="modal hide" id="2" base-price="89.99">
+                            <div class="modal hide" id="2" base-price="16.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-2.png" alt="">
+                                    <img src="assets/imagens/cardapio-2.png" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(2)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Kernel Etíope</h1>
+                                            <h1>Byte Latte</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value"></span></h3>
-                                        <p>O <strong>Kernel Etíope</strong> traz o prestígio dos grãos da região de Yirgacheffe, na Etiópia. Com notas florais, cítricas e um toque de chá preto, esses grãos proporcionam um café leve e delicado. É a escolha perfeita para quem aprecia métodos filtrados como V60 e Chemex, onde a complexidade dos sabores é destacada.  </p>
+                                        <p>O <strong>Byte Latte</strong> traz a suavidade do latte tradicional com um toque moderno. Feito com espresso, leite vaporizado, calda de caramelo e uma leve pitada de canela, sua textura cremosa e seu sabor levemente adocicado tornam-no a escolha perfeita para momentos de concentração ou relaxamento enquanto configura novos dispositivos ou faz upgrades no sistema.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -148,33 +152,35 @@
 
                             <div class="card cafe active" onclick="toggleModal(3)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-3.png" alt="">
+                                    <img src="assets/imagens/cardapio-3.png" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Bit Colombiano</h2>
-                                    <h3>R$ 49.99</h3>
-                                    <p>Grãos de corpo médio e notas doces de caramelo e frutas vermelhas, perfeitos para cafés equilibrados. </p>                                    
+                                    <h2>Kernel Mocha</h2>
+                                    <h3>R$ 12.99</h3>
+                                    <p>Rico e intenso, o Kernel Mocha combina café e chocolate quente com marshmallows, criando uma explosão de sabor.</p>                                    
                                 </div>
                             </div>
-                            <div class="modal hide" id="3" base-price="49.99">
+                            <div class="modal hide" id="3" base-price="12.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-3.png" alt="">
+                                    <img src="assets/imagens/cardapio-3.png" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(3)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Bit Colombiano</h1>
+                                            <h1>Kernel Mocha</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value"></span></h3>
-                                        <p>O <strong>Bit Colombiano</strong> é um café arábica supremo cultivado em altitudes elevadas na Colômbia. Seu perfil de sabor combina notas de caramelo, frutas vermelhas e uma acidez brilhante. É versátil e adequado tanto para espressos quanto para métodos de preparo manuais, oferecendo uma experiência de sabor rica e encorpada.</p>
+                                        <p>Inspirado no núcleo que mantém o sistema rodando, o <strong>Kernel Mocha</strong> mistura espresso e chocolate quente em perfeita harmonia. Decorado com marshmallows tostados e uma leve pitada de noz-moscada, é ideal para quem busca um café reconfortante e cheio de personalidade.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -189,34 +195,36 @@
 
                             <div class="card cafe active" onclick="toggleModal(4)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-4.png" alt="">
+                                    <img src="assets/imagens/cardapio-4.png" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Overclock Sumatra</h2>
-                                    <h3>R$ 39.99</h3>
-                                    <p>Grãos intensos com notas de especiarias, terra e um corpo encorpado, ideais para quem gosta de cafés fortes.</p>                                    
+                                    <h2>Debug Cappuccino</h2>
+                                    <h3>R$ 19.99</h3>
+                                    <p>Um cappuccino cítrico e refrescante, o Debug Cappuccino ajuda você a “desbugar” sua mente com raspas de laranja e mel.</p>                                    
                                 </div>
                             </div>
-                            <div class="modal hide" id="4" base-price="39.99">
+
+                            <div class="modal hide" id="4" base-price="19.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-4.png" alt="">
+                                    <img src="assets/imagens/cardapio-4.png" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(4)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Overclock Sumatra</h1>
+                                            <h1>Debug Cappuccino</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p>O <strong>Overclock Sumatra</strong> é um café robusto e encorpado, originário da região de Mandheling, na Indonésia. Suas notas de especiarias, terra úmida e cacau tornam-no perfeito para métodos de preparo como prensa francesa ou espresso. É um grão para quem busca uma explosão de sabor e intensidade.  
-                                        </p>
+                                        <p>O <strong>Debug Cappuccino</strong> traz uma abordagem única ao cappuccino clássico, adicionando o frescor de raspas de laranja e o toque doce e natural do mel. Com sua espuma de leite suave e o aroma cítrico, é perfeito para reenergizar a mente e o corpo, seja no início ou no meio do dia.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -231,34 +239,37 @@
 
                             <div class="card cafe active" onclick="toggleModal(5)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-5.png" alt="">
+                                    <img src="assets/imagens/cardapio-5.png" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Circuito da Guatemala</h2>
-                                    <h3>R$ 79.99</h3>
-                                    <p>Grãos com notas de chocolate amargo e frutas secas, conhecidos por sua doçura natural e corpo sedoso.</p>
+                                    <h2>Overclocked Espresso</h2>
+                                    <h3>R$ 21.99</h3>
+                                    <p>Para quem precisa de energia máxima, o Overclocked Espresso combina café duplo com um toque de baunilha e cacau.</p>
 
                                 </div>
                             </div>
-                            <div class="modal hide" id="5" base-price="79.99">
+                            
+                            <div class="modal hide" id="5" base-price="21.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-5.png" alt="">
+                                    <img src="assets/imagens/cardapio-5.png" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(5)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Circuito da Guatemala</h1>
+                                            <h1>Overclocked Espresso</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p>O <strong>Circuito da Guatemala</strong> é cultivado na região de Antigua, famosa por seus grãos de qualidade excepcional. Oferece um perfil de sabor encorpado, com notas de chocolate amargo, frutas secas e uma leve acidez cítrica. Um café elegante que se destaca em métodos como espresso e Aeropress.</p>
+                                        <p>O <strong>Overclocked Espresso é a </strong>escolha certa para quem precisa de uma dose extra de energia. Com uma base de espresso duplo, é adoçado com xarope de baunilha e complementado com uma pitada de cacau em pó, criando um sabor intenso e marcante que mantém o ritmo acelerado de quem não pode parar.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -273,34 +284,37 @@
 
                             <div class="card cafe active" onclick="toggleModal(6)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-6.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-6.png" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Pixel do Quênia</h2>
-                                    <h3>R$ 109.99</h3>
-                                    <p>Grãos vibrantes com notas de frutas vermelhas, vinho tinto e uma acidez marcante, ideais para paladares sofisticados.</p>
+                                    <h2>Pixel Freeze</h2>
+                                    <h3>R$ 22.99</h3>
+                                    <p>Refrescante e moderno, o Pixel Freeze é um café gelado com camadas de leite condensado, espresso e cubos de gelo de café.</p>
                                     
                                 </div>
                             </div>
-                            <div class="modal hide" id="6" base-price="109.99">
+
+                            <div class="modal hide" id="6" base-price="22.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-6.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-6.png" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(6)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Pixel do Quênia</h1>
+                                            <h1>Pixel Freeze</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p>O <strong>Pixel do Quênia</strong> é um café premium da classificação AA, conhecida por sua alta qualidade. Seus grãos possuem uma acidez brilhante e notas frutadas que lembram frutas vermelhas e vinho tinto. Ideal para métodos que destacam a complexidade, como V60 ou Kalita, proporcionando uma experiência única e sofisticada.</p>
+                                        <p>O <strong>Pixel Freeze</strong> é uma verdadeira obra de arte refrescante. Camadas de café espresso gelado, leite condensado e cubos de gelo feitos de café criam uma bebida visualmente impactante e deliciosa. Ideal para quem precisa de algo frio e energizante enquanto explora novas configurações tecnológicas.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -315,33 +329,36 @@
 
                             <div class="card acc" onclick="toggleModal(7)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-7.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-7.jpeg" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Mousepad Coffee Code</h2>
-                                    <h3>R$ 34.99</h3>
-                                    <p>Mousepad ergonômico com design de grãos de café e trechos de código, perfeito para amantes de café e tecnologia.</p>                                    
+                                    <h2>Toast de Circuito</h2>
+                                    <h3>R$ 29.99</h3>
+                                    <p>Pão artesanal com purê de abacate temperado, ovo poché e toque de páprica defumada.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="modal hide" id="7" base-price="34.99">
+                            <div class="modal hide" id="7" base-price="29.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-7.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-7.jpeg" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(7)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Mousepad Coffee Code</h1>
+                                            <h1>Pixel do Quênia</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p>O <strong>Mousepad Coffee</strong> Code é feito com material antiderrapante e superfície de alta precisão, ideal para uso profissional e gamers. O design exclusivo combina grãos de café estilizados com linhas de código, tornando-o uma escolha funcional e estilosa para sua estação de trabalho.</p>
+                                        <p>O <strong>Toast de Circuito</strong> é uma combinação equilibrada de sabor e nutrição. Feito com pão de fermentação natural, recebe uma generosa camada de purê de abacate temperado com limão e azeite, coroado com um ovo poché perfeito e finalizado com páprica defumada e microverdes. Ideal para um café reforçado e moderno.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -356,33 +373,35 @@
 
                             <div class="card acc" onclick="toggleModal(8)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-8.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-8.jpeg" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Caneca USB Heater – Always Warm</h2>
-                                    <h3>R$ 59.99</h3>
-                                    <p>Caneca com aquecedor USB integrado para manter seu café na temperatura ideal durante longas horas de trabalho.</p>
+                                    <h2>Pão de Byte</h2>
+                                    <h3>R$ 15.99</h3>
+                                    <p>Clássico pão de queijo com recheios variados, como cream cheese, frango desfiado ou carne seca.</p>
                                 </div>
                             </div>
-                            <div class="modal hide" id="8" base-price="59.99">
+                            <div class="modal hide" id="8" base-price="15.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-8.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-8.jpeg" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(8)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Pixel do Quênia</h1>
+                                            <h1>Pão de Byte"</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p>A <strong>Caneca USB Heater</strong> é feita de aço inoxidável e possui um aquecedor integrado alimentado via USB. Compacta e elegante, mantém seu café ou chá aquecido enquanto você trabalha. Perfeita para quem passa horas no computador e não quer perder o sabor da bebida preferida.</p>
+                                        <p>O <strong>Pão de Byte</strong> transforma o tradicional pão de queijo em um lanche gourmet. Disponível em versões recheadas com cream cheese cremoso, frango temperado com ervas ou carne seca desfiada com requeijão. Um clássico revisitado, perfeito para acompanhar qualquer café da casa.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -397,33 +416,35 @@
 
                             <div class="card acc" onclick="toggleModal(9)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-9.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-9.jpeg" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Teclado Coffee Mechanical – Switch Café</h2>
-                                    <h3>R$ 99.99</h3>
-                                    <p>Teclado mecânico com iluminação LED âmbar e switches com feedback suave que imitam o clique de grãos de café.</p>
+                                    <h2>Debug Burger</h2>
+                                    <h3>R$ 45.99</h3>
+                                    <p>Mini hambúrgueres com blend de carne especial, queijo artesanal, cebola caramelizada e molho de mostarda com mel.</p>                                    
                                 </div>
                             </div>
-                            <div class="modal hide" id="9" base-price="99.99">
+                            <div class="modal hide" id="9" base-price="45.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-9.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-9.jpeg" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(9)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Teclado Coffee Mechanical – Switch Café</h1>
+                                            <h1>Debug Burger</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p>O <strong>Teclado Coffee Mechanical</strong> é uma peça única, com design ergonômico e teclas que proporcionam uma experiência tátil inspirada na moagem de café. Cada tecla é decorada com ícones de café, e a iluminação LED âmbar lembra o brilho de uma xícara recém-preparada. Ideal para programadores e gamers apaixonados por café.</p>
+                                        <p>O <strong>Debug Burger</strong> é um lanche irresistível em tamanho compacto. Cada hambúrguer é preparado com um blend de carnes nobres, queijo artesanal derretido, cebola caramelizada e um molho especial de mostarda e mel, servido em um pão macio levemente tostado. Perfeito para compartilhar ou como um lanche rápido.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -438,33 +459,35 @@
 
                             <div class="card acc" onclick="toggleModal(10)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-10.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-10.jpeg" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Hub USB Coffee Station – Multitarefa</h2>
-                                    <h3>R$ 49.99</h3>
-                                    <p>Hub USB com 4 entradas e design em forma de xícara de café, funcional e divertido para organizar seus dispositivos.</p>
+                                    <h2>Wrap do Kernel</h2>
+                                    <h3>R$ 32.99</h3>
+                                    <p>Tortilla integral recheada com frango grelhado, cenoura, alface, abobrinha e molho de iogurte.</p>                                    
                                 </div>
                             </div>
-                            <div class="modal hide" id="10" base-price="49.99">
+                            <div class="modal hide" id="10" base-price="32.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-10.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-10.jpeg" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(10)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Hub USB Coffee Station – Multitarefa</h1>
+                                            <h1>Pixel do Quênia</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p>O <strong>Hub USB Coffee Station</strong> combina utilidade e criatividade. Com 4 entradas USB 3.0 de alta velocidade, seu design imita uma pequena xícara de café, sendo um acessório prático e decorativo para sua mesa. Um presente perfeito para os amantes de tecnologia e café.</p>
+                                        <p>O <strong>Wrap do Kernel</strong> é uma opção leve e deliciosa. Feito com tortilla integral, é recheado com tiras de frango grelhado, cenoura ralada, alface crocante, abobrinha grelhada e um molho refrescante de iogurte com ervas. Uma escolha saudável e saborosa para qualquer hora do dia.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -479,33 +502,35 @@
 
                             <div class="card acc" onclick="toggleModal(11)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-11.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-11.jpeg" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Fone Bluetooth Café – Sound Bean</h2>
-                                    <h3>R$ 259.99</h3>
-                                    <p>Fones de ouvido sem fio com estojo de carregamento em formato de grão de café.</p>
+                                    <h2>Cookies RAM</h2>
+                                    <h3>R$ 29.99</h3>                                
+                                    <p>Cookies artesanais com gotas de chocolate belga e pedaços crocantes de nozes.</p>
                                 </div>
                             </div>
-                            <div class="modal hide" id="11" base-price="259.99">
+                            <div class="modal hide" id="11" base-price="29.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-11.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-11.jpeg" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(11)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Fone Bluetooth Café – Sound Bean</h1>
+                                            <h1>Pixel do Quênia</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p>O <strong>Fone Bluetooth Sound Bean</strong> oferece áudio de alta qualidade e um design único inspirado em grãos de café. Com cancelamento de ruído e até 8 horas de bateria, é o acessório perfeito para quem gosta de música e café em qualquer lugar.</p>
+                                        <p>Os <strong>Cookies RAM</strong> são perfeitos para adoçar o dia. Feitos com uma receita caseira, combinam o sabor intenso do chocolate belga com a crocância das nozes. Crocantes por fora e macios por dentro, são ideais para acompanhar qualquer bebida quente ou fria.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -520,23 +545,26 @@
 
                             <div class="card acc" onclick="toggleModal(12)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-12.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-12.jpeg" alt="">
                                 </div>
                                 <div class="card-body">
                         
-                                    <h2>Suporte para Notebook Coffee Stand</h2>
-                                    <h3>R$ 45.99</h3>
-                                    <p>Suporte para notebook em madeira com design de café, ajustável e ergonômico para uso prolongado.</p>                                    
+                                    <h2>Byte Salgado</h2>
+                                    <h3>R$ 23.99</h3>
+                                    <p>Mini quiche de espinafre com queijo gruyère, em uma base crocante de massa amanteigada.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="modal hide" id="12" base-price="49.99">
+                            <div class="modal hide" id="12" base-price="23.99">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-12.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-12.jpeg" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(12)">Back</button>
                                             </div>
@@ -546,7 +574,7 @@
                                             <h1>Pixel do Quênia</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p>O <strong>Coffee Stand</strong> é um suporte para notebook feito de madeira sustentável, com gravuras de grãos de café estilizados. Além de ergonômico e ajustável, melhora o fluxo de ar para evitar superaquecimento. É uma peça prática e elegante para complementar o ambiente de trabalho de quem ama café.</p>
+                                        <p>O <strong>Byte Salgado</strong> é um quiche gourmet de sabor delicado e textura irresistível. Feito com uma base crocante de massa amanteigada e recheado com creme de espinafre e queijo gruyère, é assado até dourar. Uma opção sofisticada e prática, perfeita para um lanche ou refeição leve.</p>
                                     </div>
                                     <div class="m-btns">
                                         <div class="calc">
@@ -561,49 +589,52 @@
 
                             <div class="card others" onclick="toggleModal(13)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-13.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-13.jpeg" alt="">
                                 </div>
                                 <div class="card-body">
-                                    <h2>Ciclo do Circuito</h2>
-                                    <p>Programa de fidelidade: a cada 10 cafés comprados, o cliente ganha um pacote de grãos torrados ou um café grande gratuito.</p>
-                                    </ul>    
+                                    <h2>Café 2.0</h2>
+                                    <p>Na compra de dois cafés grandes, o cliente ganha um upgrade gratuito (chantilly, calda ou sabor adicional).</p>     
                                 </div>
                             </div>
 
                             <div class="modal sale hide" id="13">
                                 <div class="modal-img">
-                                    <img src="assets/imagens/produto-13.jpeg" alt="">
+                                    <img src="" alt="">
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(13)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Ciclo do Circuito</h1>
+                                            <h1>Café 2.0</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p>Programa de fidelidade: a cada 10 cafés comprados, o cliente ganha um pacote de grãos torrados ou um café grande gratuito.</p>
+                                        <p>Na compra de dois cafés grandes, o cliente recebe um upgrade gratuito para deixar o café ainda mais especial.</p>
                                         <ul>
+                                            <li>Opções de Upgrade</li>
+                                                <ul>
+                                                    <li>Adição de chantilly cremoso.</li>
+                                                    <li>Calda especial (caramelo, chocolate, ou outra disponível).</li>
+                                                    <li>Um sabor adicional (baunilha, avelã, canela, ou outro disponível).</li>
+                                                </ul>
                                             <li>Como funciona</li>
+                                                <ol>
+                                                    <li>Ao pedir dois cafés grandes, o cliente pode escolher uma opção de upgrade gratuito para qualquer um dos cafés.</li>
+                                                    <li>A promoção é válida para compras feitas no balcão, drive-thru ou pedidos online.</li>
+                                                </ol>
+                                            <li>Regras e Observações:</li>
                                                 <ul>
-                                                    <li>Cada vez que o cliente compra um café, ele acumula 1 ponto.</li>
-                                                    <li>Após completar 10 pontos (ou seja, 10 cafés comprados), o cliente ganha uma recompensa especial.</li>
-                                                </ul>
-                                            <li>Recompensas Disponíveis</li>
-                                                <ul>
-                                                    <li>Um pacote de grãos de café torrados (ideal para preparo em casa).</li>
-                                                    <li>Ou um café grande gratuito da sua escolha no local.</li>
-                                                </ul>
-                                            <li>Observações</li>
-                                                <ul>
-                                                    <li>O cliente pode escolher entre as duas opções de recompensa.</li>
-                                                    <li>A contagem de pontos é feita no sistema de fidelidade da loja ou por um cartão de fidelidade carimbado/manual.</li>
-                                                    <li>Os pontos não expiram, mas são limitados a uma troca por período definido (se houver alguma política específica).</li>
+                                                    <li>O upgrade deve ser solicitado no momento da compra.</li>
+                                                    <li>A promoção não é cumulativa com outros descontos ou benefícios.</li>
+                                                    <li>Limitado a um upgrade gratuito por transação que inclua dois cafés grandes.</li>
+                                                    <li>Personalizações adicionais fora do upgrade gratuito serão cobradas à parte.</li>
                                                 </ul>
                                     </div>
                                     <div class="m-btns">
@@ -619,11 +650,12 @@
 
                             <div class="card others" onclick="toggleModal(14)">
                                 <div class="card-img">
-                                    <img src="assets/imagens/produto-14.jpeg" alt="">
+                                    <img src="assets/imagens/cardapio-14.jpeg" alt="">
                                 </div>
                                 <div class="card-body">
-                                    <h2>Grão Hacker</h2>
-                                    <p>Desconto de em pacotes de café em grãos nas terças-feiras.</p>
+                        
+                                    <h2>Café para Devs</h2>
+                                    <p>Promoção especial para grupos que pedirem 4 cafés ou mais: 15% de desconto para sessões de trabalho ou estudo na cafeteria.</p>
                                 </div>
                             </div>
 
@@ -633,24 +665,27 @@
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(14)">Back</button>
                                             </div>
                                     </div>
                                     <div class="m-principal">
                                         <div class="m-title">
-                                            <h1>Ciclo do Circuito</h1>
+                                            <h1>Café para Devs</h1>
                                         </div>
                                         <h3 class="price">R$ <span class="price-value">69.99</span></h3>
-                                        <p>Todas as terças-feiras, clientes têm direito a 20% de desconto na compra de pacotes de café em grãos.</p>
+                                        <p>Para grupos que pedirem 4 cafés ou mais em uma única compra, oferecemos 15% de desconto em todos os pedidos! Ideal para quem está aproveitando a cafeteria para sessões de trabalho, estudos em equipe ou momentos descontraídos.
+                                        </p>
                                         <ul>
-                                            <li>Como Participar:</li>
-                                                <ul>
-                                                    <li>Para aproveitar o desconto, o cliente precisa mencionar a "senha secreta" válida para a semana.</li>
+                                            <li>Como funciona:</li>
+                                                <ol>
+                                                    <li>O grupo deve solicitar 4 ou mais bebidas (de qualquer tamanho ou tipo) em uma única transação.</li>
                                                     <li>A senha secreta é divulgada exclusivamente nas redes sociais da loja, incentivando os seguidores a ficarem atentos às postagens.</li>
-                                                </ul>
+                                                </ol>
                                             <li>Regras e Observações:</li>
                                                 <ul>
                                                     <li>A promoção é válida apenas para pacotes de café em grãos (não inclui outras categorias de produtos).</li>
@@ -687,8 +722,10 @@
                                 </div>
                                 <div class="modal-textos">
                                     <div class="header">
-                                        <img src="assets/imagens/Logo.svg" alt="">
-                                        <h2 class="m-header-title">Coffe Byte</h2>
+                                        <div class="brand-modal">
+                                            <img src="assets/imagens/Logo.svg" alt="">
+                                            <h2 class="m-header-title">Coffe Byte</h2>
+                                        </div>
                                             <div class="sair">
                                                 <button class="esc" onclick="toggleModal(15)">Back</button>
                                             </div>

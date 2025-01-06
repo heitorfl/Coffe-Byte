@@ -176,3 +176,10 @@
         border: 1px solid $light-cream-05;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .cart .cart-title{
+        font-size: 50px;
+        text-align: center;
+    }
+}

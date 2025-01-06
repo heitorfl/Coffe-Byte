@@ -18,7 +18,7 @@ function login() {
 
     if (usuarioEncontrado) {
         //redireciona o usuario a pagina home
-        window.location.href = "index.html"
+        window.location.href = "cardapio.html"
     }
     else{
         // exibe msg de erro

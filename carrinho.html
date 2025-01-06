@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
     <link rel="stylesheet" href="src/sass/style.css">
-    <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/imagens/favicon.svg" type="image/x-icon">
 </head>
 <body class="b-carrinho">
     <header class="cabecalho-2">
@@ -20,20 +20,27 @@
         </div>
         <nav class="navbar-2">
             <ul>
-                <li><a href="">Cardápio</a></li>
-                <li><a href="">Fundadores</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="fundadores.html">Fundadores</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="#">Carrinho</a></li>
-                <li><a href="">Suporte</a></li>
-                <li><a href="">Sobre</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
             </ul>
-
-           <section class="user">
-
-           </section>
-        </nav>
-
-
+        </nav>  
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar"><i class="fa-solid fa-x"></i></div>
+            <nav>
+                <ul>
+                    <li><a href="cardapio.html"><i class="fa-solid fa-bell-concierge cardapio"></i>Cardápio</a></li>
+                    <li><a href="produtos.html"><i class="fa-solid fa-box produtos"></i>Produtos</a></li>
+                    <li><a href="suporte.html"><i class="fa-solid fa-pen-nib suporte"></i>Suporte</a></li>
+                    <li><a href="fundadores.html"><i class="fa-solid fa-info sobre"></i>Sobre</a></li>
+                    <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping carrinho"></i>Carrinho</a></li>
+                </ul>
+            </nav>  
+        </div>
+        <div class="abrir-menu" id="btn-menu"><i class="fas fa-bars"></i></div>
+        <div class="overlay-menu" id="overlay-menu"></div>
     </header>
     <main>
         <div class="cart">
@@ -58,5 +65,6 @@
 
     <script src="https://kit.fontawesome.com/803e48205f.js" crossorigin="anonymous"></script>
     <script src="src/js/carrinho.js"></script>
+    <script src="src/js/menu.js"></script>
 </body>
 </html>
