@@ -1,22 +1,20 @@
 @import 'colors';
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Abhaya Libre";
 }
 
 body{
     background-color: $dark-gray;
 }
 
-html{
-    scrollbar-width: none;
+// interface do site
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
 }
-
-
 
 // home inicial com a configuração da imagem
 .home{
@@ -25,7 +23,7 @@ html{
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   margin-bottom: 45px;
+   
 }
 
 .home::before{
@@ -36,7 +34,7 @@ html{
     left: 0;
     top: 0;
     width: 100%;
-    height: 700px;
+    height: 500px;
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,10 +45,6 @@ html{
 //navbar
 .cabecalho{
     margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 
 .navbar{
@@ -59,25 +53,22 @@ html{
     align-items: center;
     gap: 60px;
     
+
     ul{
         display: flex;
         gap: 60px;   
     }
 
     li{
-        a{
-            color: $white;
-            cursor: pointer;
-            font-size: 1.3rem;
-        }
-        
+        color: $white;
+        cursor: pointer;
        }
 }
+
 
 // botoes de login e sing in do navbar
 button{
     border: 0;
-    font-size: 1.3rem;
 }
 
 .login{
@@ -85,7 +76,7 @@ button{
     color: $light-cream-05;
     font-weight: 700;
     border: 2px solid $light-cream-05;
-    width: 100px;
+    width: 80px;
     height: 35px;
     border-radius: 5px;
     cursor: pointer;
@@ -103,7 +94,7 @@ button{
    background-color: $light-cream-05;
    font-weight: 700;
    color: $white;
-   width: 100px;
+   width: 80px;
     height: 35px;
     border-radius: 5px;
     cursor: pointer;
@@ -117,96 +108,6 @@ button{
     border: 0;
 }
 
-//menu mobile
-.btn-abrir-menu i{
-    display: none;
-    font-size: 40px;
-    cursor: pointer;
-}
-
-.menu-mobile{
-    display: flex;
-    flex-direction: column;
-    background-color: $gray;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    width: 0%;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.menu-mobile.abrir-menu{
-    width: 70%;
-}
-
-.menu-mobile.abrir-menu ~ .overlay-menu{
-    display: block;
-}
-
-.menu-mobile .btn-fechar{
-    padding: 22px 4%;
-    display: flex;
-    justify-content: end;
-}
-
-.menu-mobile .btn-fechar i{
-    color: $white;
-    font-size: 40px;
-    cursor: pointer;
-    
-}
-
-.menu-mobile nav ul{
-    text-align: right;
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-mobile nav ul li{
-    display: flex;
-}
-
-.menu-mobile nav ul li i{
-    font-size: 2rem;
-}
-
-.menu-mobile nav ul li a{
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding: 20px 8%;
-    display: block;
-}
-
-.menu-mobile nav ul li:hover{
-    background-color: $light-cream-05;
-    color: $white; 
-}
-
-.cardapio, .produtos, .suporte{
-    margin-right: 30px;
-}
-
-.sobre{
-    margin-right: 50px;
-}
-
-.overlay-menu{
-    background-color: #000000a7;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 8888;
-    display: none;
-}
-
-
 //sessão inicial da home
 .text-inicial{
     display: flex;
@@ -219,31 +120,21 @@ button{
         height: auto;
     }
 
-    h1{
-        color: $white;
-        font-size: 3.5rem;
-        margin-top: -30px;
-    }
-
     p{
         color: $white;
         font-size: 1.5rem;
         font-weight: 700;
         text-align: center;
-        margin-top: 20px;
-        letter-spacing: 3px;
-        line-height: 4px;
     }
 
     .btn-veja-mais{
-        width: 370px;
-        height: 50px;
+        width: 320px;
+        height: 40px;
         border-radius: 10px;
         margin-top: 10px;
         background-color: $light-cream-05;
         color: $white;
         font-weight: 700;
-        font-size: 1.3rem;
         cursor: pointer;
         transition: 500ms ;
     }
@@ -255,592 +146,87 @@ button{
     }
 }
 
-//configuracao geral do site da home pra baixo
+
 .container-principal{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
-    hr{
-        color: $white;
-        width: 1450px;
-    }
-
-    h1{
-        color: $white;
-        margin-top: 50px;
-        font-size: 3rem;
-    }
 }
 
-//container-video
-.container-video{
+//carrossel
+.carrossel-container {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;  
-}
+    width: 80%;
+    margin-top: 20px;
+    margin: auto;
+    overflow: hidden;
 
-.video video {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 700px;
-    object-fit: cover; 
-    z-index: -1; 
-}
-
-// container dos texto e imagens que estao em cima do video
-.container-texto-imagens {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 200px;
-    position: relative;
-    z-index: 1; 
-    width: 100%; 
-    height: 700px;
-    padding: 50px 9%;
-    background: linear-gradient(to right, rgb(0, 0, 0,3), rgba(0, 0, 0, 0.3)); 
-   
-    .textos {
-       h1{
-        color: $white;
-        font-size: 5.6rem;
-        margin-bottom: -20px;
-       }
-
-       h2{
-        color: $caramel-01;
-        font-size: 3rem;
-        margin-bottom: 30px;
-       }
-
-       p{
-        color: $white;
-        font-size: 1.5rem;
-        line-height: 2.3rem;
-        letter-spacing: 0.3px;
-        text-align: justify;
-        text-indent: 50px;
-
-        span{
-            text-transform: uppercase;
-            font-weight: 800;
-            color: $light-cream-03;
-        }
-       }
+    .carrossel {
+        display: flex;
+        transition: transform 0.5s ease-in-out; 
     }
 
-    .imagem-capa{
-        img{
-            width: 600px;
-        }
+    .carrossel-item {
+        min-width: 100%;
+        max-width: 100%;
     }
-}
-
-// area do conheca
-.conheca{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 8%;
-    margin-bottom: 50px;
-    gap: 50px;
     
-    h1{
-        font-size: 5.6rem;
-        color: $white;
+    .carrossel img {
+        width: 100%; 
+        height: auto;
     }
 
-    .cards{
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       flex-direction: row;
-       gap: 270px;
-
-       .icone-card{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 30px;
-
-        i{
-            color: $light-cream-03;
-            font-size: 5rem;
-        }
-         p{
-            color: $white;
-            width: 300px;
-            text-align: center;
-            font-size: 1.5rem;
-            letter-spacing: 1px;
-         }
-       }
+    //botoes de controle
+    button{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        z-index: 10;
     }
-}
 
-//horario e funcionamento
-.horario-localizacao{
+    button.prev {
+     left: 10px;
+    }
+
+    button.next {
+        right: 10px;
+    }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+ }
+
+// container dos cards
+.container-cards{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-    background-color: $gray;
-    padding: 40px 8%;
-
-    h1{
-        font-size: 5.6rem;
-        color: $light-cream-02;
-    }
-
-    .funcionamento{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 200px;
-
-        .horario{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            span{
-                text-align: center;
-                color: $light-cream-03;
-                text-transform: uppercase;
-                font-size: 2.3rem;
-                font-weight: 800;
-            }
-
-            p{
-                color: $white;
-                font-size: 2.2rem;
-            }
-        }
-
-
-        .localizacao{
-            iframe{
-                width: 700px;
-                height: 400px;
-                border-radius: 10px;
-            }
-        }
-    }
+    flex-direction: row;
+    gap: 50px;
 }
 
-//rodapé da pagina 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 300px;
-    background-image: url("../../assets/imagens/Footer-Background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 70% 60%;
-    z-index: 1;
-}
+.card{
+    border: 2px solid white;
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px;
 
-.f-brand{
-    display: flex;
-    align-items: center;
-}
-
-.f-brand .img-brand{
-    margin: 20px;
-    img{
-        width: 140px;
-    }
-}
-
-.f-brand .text-brand{
     h3{
         color: $white;
-        font-size: 2.7rem;
-        border-bottom: 1px solid $white;
-        padding: 10px 10px 10px 0;
+        text-align: center;
     }
+
     p{
+        height: 200px;
+        overflow-y: scroll;
         color: $white;
-        font-size: 1.5rem;
-        padding: 10px 10px 10px 0;
+        text-align: justify;
     }
 }
-
-.contacts{
-    display: flex;
-    align-items: center;
-    margin: 20px;
-
-    hr{
-        height: 250px;
-    }
-}
-
-.contacts .phone-num{
-    li{
-        list-style: disc;
-        padding: 10px;
-        color: $white;
-    }
-
-    font-size: 25px;
-    font-weight: 700;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.contacts .social-media{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-left: 10px;
-
-    a{
-        color: $white;
-        transition: 0.5s;
-    }
-
-    i{
-        font-size: 36px;
-        padding: 5px;
-    }
-}
-
-.contacts .social-media a:hover{
-    color: $light-cream-03;
-    transform: scale(1.1);
-}
-
-
-// configuracao do mobile
-@media (max-width: 480px){
-
-    .text-inicial{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 90px;
-    
-        img{
-            width: 150px;
-            height: auto;
-        }
-    
-        h1{
-            font-size: 2.7rem;
-        }
-    
-        p{
-           
-            font-size: 1.3rem;
-            
-        }
-    
-        .btn-veja-mais{
-            width: 250px;
-            height: 50px;
-            
-        }
-    
-        
-    }
-
- //cabecalho da pagina
-    .cabecalho{
-        margin-top: 30px;
-        display: flex;
-        flex-direction: row;
-        align-items: end;
-        justify-content: end;
-    }
-    
-        .btn-abrir-menu i{
-            display: block;
-            color: $white;
-            font-size: 40px;
-            margin-right: 300px;
-        }
-
-    .navbar{
-        display: none;
-    }
-
-    //botoes de login e sign-in
-    .botoes{
-        display: flex;
-        flex-direction: column;
-        margin-left: 30px;
-        gap: 19px;
-        margin-top: 20px;
-
-    .login{
-    background-color: $dark-gray;
-    color: $light-cream-05;
-    font-weight: 700;
-    border: 2px solid $light-cream-05;
-    width: 180px;
-    height: 35px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 500ms ;
-}
-
-    .login:hover{
-    transform: translateY(-5px);
-    background-color: $white;
-    color: $dark-gray;
-    border: 0;
-}
-
-    .sing-in{
-   background-color: $light-cream-05;
-   font-weight: 700;
-   color: $white;
-   width: 180px;
-    height: 35px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 500ms ;
-}
-
-    .sing-in:hover{
-    transform: translateY(-5px);
-    background-color: $white;
-    color: $dark-gray;
-    border: 0;
-}
-
-
-
-//container de texto, imagens e video da pagina
-    }
-
-    .video video{
-        height: 1160px;
-    }
-
-    .container-texto-imagens{
-        height: 1160px;
-        gap: 20px;
-        flex-direction: column;
-       
-
-        .textos {
-            h1{
-             color: $white;
-             font-size: 3.5rem;
-             margin-bottom: 3px;
-             text-align: center;
-            }
-     
-            h2{
-             color: $light-cream-05;
-             font-size: 2.1rem;
-             margin-bottom: 17px;
-             text-align: center;
-            }
-     
-            p{
-             color: $white;
-             font-size: 1.5rem;
-             line-height: 2rem;
-             letter-spacing: 0.2px;
-             text-align: justify;
-             text-indent: 50px;
-             padding: 13px;
-     
-             span{
-                 text-transform: uppercase;
-                 font-weight: 800;
-                 color: $light-cream-03;
-             }
-            }
-         }
-
-         .imagem-capa{
-           
-            img{
-                width: 350px;
-            }
-        }
-    }
-
-    //parte do conheca
-    .conheca{
-        padding: 20px 4%;
-        margin-bottom: 50px;
-        gap: 60px;
-
-        h1{
-            font-size: 4rem;
-        }
-
-    .cards{
-        flex-direction: column;
-        gap: 70px;
-
-        .icone-card{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 30px;
-    
-            i{
-                color: $light-cream-03;
-                font-size: 4.5rem;
-            }
-             p{
-                color: $white;
-                width: 300px;
-                text-align: center;
-                font-size: 1.5rem;
-                letter-spacing: 1px;
-             }
-           }
-    }
-
-    }
-
-    //parte do funcionamento
-    .horario-localizacao{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 80px;
-        width: 100%;
-        background-color: $gray;
-        padding: 40px 8%;
-    
-        h1{
-            font-size: 3.5rem;
-            text-align: center;
-            color: $light-cream-02;
-            margin-bottom: -18px;
-        }
-    
-        .funcionamento{
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-    
-            .horario{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-    
-                span{
-                    text-align: center;
-                    color: $light-cream-03;
-                    text-transform: uppercase;
-                    font-size: 2.1rem;
-                    font-weight: 800;
-                }
-    
-                p{
-                    color: $white;
-                    font-size: 2.2rem;
-                }
-            }
-      
-            .localizacao{
-                iframe{
-                    width: 320px;
-                    height: 320px;
-                    border-radius: 10px;
-                }
-            }
-        }
-    }
-
-    //rodape da pagina
-
-    footer{
-        flex-direction: column;
-        height: 570px;
-    }
-
-    .f-brand{
-        flex-direction: column;
-    }
-    
-    .f-brand .img-brand{
-        margin-bottom: -15px;
-        img{
-            width: 140px;
-        }
-    }
-    
-    .f-brand .text-brand{
-        h3{
-            text-align: center;
-        }
-        p{
-            font-size: 1.3rem;
-            padding: 10px 10px 10px 0;
-            text-align: center;
-            text-indent: 4px;
-        }
-    }
-    
-    .contacts{
-       flex-direction: column;
-    
-        hr{
-            height: 0px;
-            width: 320px;
-        }
-    }
-    
-    .contacts .phone-num{
-        li{
-            list-style: disc;
-            padding: 10px;
-            color: $white;
-        }
-    
-        font-size: 25px;
-        font-weight: 700;
-        padding: 10px;
-        display: flex;
-        align-items: center;
-    }
-    
-    .contacts .social-media{
-        display: flex;
-        flex-direction: row;
-        gap: 12px;
-        margin-left: 12px;
-        margin-top: 10px;
-    
-        a{
-            color: $white;
-            transition: 0.5s;
-        }
-    
-        i{
-            font-size: 36px;
-            padding: 5px;
-        }
-    }
-    
-    .contacts .social-media a:hover{
-        color: $light-cream-03;
-        transform: scale(1.1);
-    }
-}   

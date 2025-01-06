@@ -1,103 +1,165 @@
 @import 'colors';
 
-// Variáveis
-$primary-color: #b47b58;
-$secondary-color: #1e1e1e;
-$font-color: #fff;
-$font-family: 'Arial', sans-serif;
-
-// Reset Básico
+/* Reset de margens e fontes padrão */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: $font-family;
-  color: $font-color;
-  background-color: $secondary-color;
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
 }
 
-// Cabeçalho
-.header {
+/* Cabeçalho */
+header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: $secondary-color;
-  border-bottom: 1px solid lighten($secondary-color, 20%);
-
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  .nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-
-    li a {
-      text-decoration: none;
-      color: $font-color;
-      &:hover {
-        color: $primary-color;
-      }
-    }
-  }
-
-  .buttons button {
-    margin-left: 0.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    cursor: pointer;
-    &.login {
-      background-color: transparent;
-      color: $primary-color;
-      border: 1px solid $primary-color;
-    }
-    &.signin {
-      background-color: $primary-color;
-      color: $font-color;
-    }
-  }
+  justify-content: space-between;
+  background-image: linear-gradient(to left, rgba(64, 44, 14, 0.407), #000408), 
+                    url("../../assets/imagens/background-home.jpg");
+  padding: 20px 30px; /* Aumenta o espaçamento interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-// Seção Principal
-.main {
+/* Logo */
+header .logo {
   display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  height: 50px; /* Aumenta o tamanho da logo */
+  width: auto;
+}
+
+header .logo span {
+  font-size: 22px; /* Aumenta o tamanho do texto */
+  color: white;
+  font-weight: bold;
+}
+
+/* Links de navegação */
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* Aumenta o espaço entre os links */
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px; /* Adiciona mais espaço ao redor dos links */
+  font-size: 18px; /* Aumenta a fonte para destacar os links */
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Botões de Login e Sign In */
+header .buttons {
+  display: flex;
+  align-items:center;
+  gap: 15px; /* Aumenta o espaço entre os botões */
+}
+
+header button {
+  background-color: #BC8A5F;
+  border: none;
+  padding: 10px 20px; /* Aumenta o tamanho do botão */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;;
+  font-size: 16px; /* Aumenta o tamanho da fonte do botão */
+}
+
+header button:hover {
+  background-color: #A3754E;
+  transform: scale(1.05);
+}
+
+/* Seção principal */
+.main {
+  position: relative;
+  height: 100vh;
+  background: url('../../assets/imagens/img-support.jpg') no-repeat center center/cover;
+  border-radius: 15px; /* Adiciona bordas arredondadas */
+  overflow: hidden;    /* Garante que o conteúdo dentro da borda também seja cortado */
+  margin: 20px;        /* Adiciona espaço externo ao redor da imagem */
+}
+
+/* Fundo translúcido cobrindo toda a imagem */
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Preto translúcido */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  background: url('background.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
 
-  .hero {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 2rem;
-    border-radius: 10px;
+/* Título */
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
+/* Texto descritivo */
+.hero p {
+  font-size: 20px;
+  max-width: 800px;
+  line-height: 1.8;
+}
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-    }
+/* Botão principal */
+.contact-button {
+  padding: 12px 100px;
+  background-color: #BC8A5F;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
 
-    .contact-button {
-      padding: 0.8rem 2rem;
-      background-color: $primary-color;
-      border: none;
-      color: $font-color;
-      font-size: 1rem;
-      cursor: pointer;
-      &:hover {
-        background-color: lighten($primary-color, 10%);
-      }
-    }
+.contact-button:hover {
+  background-color: #A3754E;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  header a {
+    padding: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    padding: 10px 20px;
   }
 }

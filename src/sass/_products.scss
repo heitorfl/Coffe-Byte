@@ -3,157 +3,59 @@
 @import 'colors';
 
 
-.b-products{
+body{
     color: $white;
-    max-width: 100vw;
-    overflow-x: hidden;
-    font-family: "Abhaya";
 }
 
-/*Cabeçalho*/
-
-.cabecalho-2{
-    background-image: linear-gradient(90deg, black, black, transparent, transparent),url(../../assets/imagens/imagem-home.png);
-    background-size: cover;
-    background-repeat: no-repeat;    
-    display: inline-flex;
-}
-
-.cabecalho-2 .brand{
-    display: flex;
-}
-
-.cabecalho-2 .brand .brand-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.cabecalho-2 .brand .brand-text .brand-title{
-    font-family: "Abhaya";
-    font-size: 28px;
-}
-
-.cabecalho-2 .brand .brand-text .brand-subtitle{
-    font-weight: 300;
-    font-size: 20px;
-}
-
-.cabecalho-2 .brand img{
-    width: 90px;
-}
-
-.cabecalho-2 .navbar-2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.cabecalho-2 .navbar-2 ul{
-    display: flex;
-    
-}
-
-.cabecalho-2 .navbar-2 ul li a{
-    margin: 0 15px 0 15px;
-    text-decoration: none;
-    color: $white;
+button{
+    cursor: pointer;
 }
 
 .title{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 70px;
-    margin: 30px 70px 0 70px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 10px 1px black;
-    
-    background-image: linear-gradient(90deg, black, transparent, black),url(../../assets/imagens/parallax-fundo-produtos.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
+    padding: 15px;
+    border-bottom: 1px solid $white;
+    margin: auto 30px 10px 30px;
+    border-radius: 2px;
 }
-
 
 .title h1{
-    font-size: 40px;
-    font-family: "Abhaya";
-    padding: 10px;
-    border-top: 2px solid $white;
-    border-bottom: 2px solid $white;
+    font-size: 30px;
+    font-family: Abhaya;
 }
-
 
 .container{
-    margin: 0 50px 10px 50px;
+    margin: 10px 50px 10px 50px;
 }
 
-.produtos{
-    margin-top: 0;
-}
-
-.sec-toggler{
+.btns{
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 50px 20px 10px 20px;
-    border-bottom: 3px solid $light-cream-03;
-    border-radius: 15px;
+    align-items: center;
+    width: 1210px;
 }
 
-.sec-toggler .open{
-    display: flex;
-    padding: 20px 50px;
-    cursor: pointer;
-    transition: 0.2s;
-    border-bottom: 3px solid transparent;
-    opacity: 0.7;
-}
-
-.sec-toggler .open.active{
-    background-color: $gray;
-    transform: scale(1.1);
-    border-bottom: 3px solid $light-cream-05;
-    opacity: 1;
-}
-
-.sec-toggler .open:hover{
-    color: $light-cream-02;
-    text-decoration: underline;
+.btn-toggler{
+    padding: 50px 100px 50px 100px;
+    margin: 0 45px 0 45px;
 }
 
 .sections{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .section{
-    display: flex;
-    flex-wrap: wrap;
-    height: 1100px;
+    margin: 0 40px 0 40px;
 }
 
 .card{
-    width: 335px;
-    height: 250px;
-    margin: 30px;
+    width: 350px;
+    margin: 10px;
     border-radius: 20px;
-    display: none;
-    transition: 800ms;
-    cursor: pointer;
-    
 }
-
-.card:hover{
-    transform: scale(1.05);
-}
-
-.card.active{
-    display: block;
-}
-
 
 .card-img{
     width: 100%;
@@ -170,7 +72,6 @@
 }
 
 .card-body{
-    font-family: "Abhaya";
     border: 1px solid $white;
     padding: 10px;
     margin-top: -5px;
@@ -179,394 +80,165 @@
     display: flex;
     flex-direction: column; 
     z-index: 1;
-    padding: 30px;
-    height: 250px;
-    box-shadow: 0px 5px 10px 1px black;
 }
 
 .card-body h2{
     border-bottom: 1px solid $white;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
+    margin: 10px;
 }
 
 .card-body h3{
+    margin: 10px;
     font-size: 24px;
-    margin-bottom: 10px;
 }
-
 
 .card-body p{
-    font-size: 18px;
+    margin: 10px;
+    font-size: 15px;
 }
 
-
 .card-body .btn-card{
-    margin-top: 20px;
     display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-
+    justify-content: space-between;
+    margin: 10px 20px 10px 20px;
     .calc{
         display: inline-flex;
-        align-items: center;
         button{
-            height: 45px;
-            width: 45px;
+            padding: 11px 15px;
             border-radius: 50%;
             background-color: $white;
             font-size: 20px;
             text-align: center;
-            transition: 0.2s;
-        }
-        button:hover{
-            transform: scale(1.05);
         }
     }
     .add{
-        padding: 15px 20px;
+        padding: 5px 30px;
         border-radius: 20px;
         background-color: transparent;
         border: 1px solid $white;
         color: $white;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 700;
         text-align: center;
         justify-content: center;
-        transition: 0.3s;
-        font-family: "Abhaya";
         i{
             margin-left: 10px;
             font-size: 20px;
         }
     }
-    .add:hover{
-        background-color: $caramel-02;
-        border: 1px solid $caramel-01;
-        transform: scale(1.07);
-    }
     .n-card{
-        margin: 0 10px;
-        font-size: 26px;
+        font-size: 22px;
     }
     
 }
 
-.fade,.modal{
-    transition: 0.5s;
-    opacity: 1;
-    pointer-events: all;
+.card-body .open-btn{
+    padding: 5px 2px;
+    margin: 5px 40px;
+    background-color: $white;
+    border-radius: 15px;
+    font-family: Abhaya;
+    font-size: 20px;
 }
 
-.fade{
+dialog{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-  
-.modal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    width: 1000px;
-    height: 625px;
-    max-width: 90%;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    width: 1200px;
+    height: 1400px;
     background-color: $dark-gray;
-    border-radius: 20px;
-    z-index: 5;
+    justify-self: center;
+}
+
+dialog::backdrop{
+    background-color: black;
+    opacity: 50%;
+}
+
+.modal{
+    height: 500px;
+    display: flex;
 
     .modal-img{
-        display: flex;
-        justify-content: center;
-        width: 2700px;
-        filter: brightness(70%);
-        overflow: hidden;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        width: 4000px;
     }
 
     .modal-textos .header{
-        background-image: linear-gradient(to left, rgba(64, 44, 14, 0.407), #000408),url(../../assets/imagens/imagem-home.png);
+        background-image: linear-gradient(to left, rgba(64, 44, 14, 0.407), #000408),url(../../assets/imagens/Imagem-Fundo.svg);
+        z-index: -1;
         display: flex;
         background-repeat: no-repeat;
-        background-size: cover;
+        left: 0;
+        top: 0;
         width: 100%;
+        opacity: 10;
+
+        justify-content: left;
+        align-items: center;
         color: $white;
 
         img{
             width: 100px;
         }
 
-        .m-header-title{
-            display: flex;
-            border: none;
-            width: 200px;
-            align-items: center;
-            font-size: 25px;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
         .sair{
-            width: 100%;
-            display: flex;
-            justify-content: right;
-            align-items: center;
+            margin-left: 60%;
 
             .esc{
                 background-color: black;
                 color: $caramel-01;
-                padding: 10px;
-                width: 70px;
+                padding: 10px 15px;
                 border: 2px solid $caramel-01;
                 border-radius: 10px;
-                margin-right: 10px;
-                transition: 0.5s;
-            }
-            .esc:hover{
-                transform: scale(1.1);
-                background-color: $caramel-01;
-                color: $white;
-                font-weight: 700;
-                cursor: pointer;
             }
 
         }
 
     }
     .modal-textos .m-principal{
-        height: 65%;
         color: $white;
         padding: 25px;
 
             .m-title{
-                border-bottom: 2px solid $white;
+                border-bottom: 1px solid $white;
                 padding: 10px;
                 margin-bottom: 30px;
             }
             h3{
                 font-size: 30px;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
             }
-            p{
-                font-size: 20px;
-                font-family: "Abhaya";
-            }
+            
     }
     .modal-textos .m-btns{
         display: flex;
-        
-        font-family: "Abhaya";
-        justify-content: center;
+        margin: 0 20px 0 20px;  
         color: $white;
         font-size: 25px;
         
         button{
             padding: 18px 22px;
-            cursor: pointer;
         }
-        .calc{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 15px;
-            .minus, .plus{
-                background-color: $white;
-                border-radius: 50%;
-                font-size: 18px;
-                transition: 0.3s;
-            }
-            .n-card{
-                font-size: 23px;
-                margin: 0 20px;
-            }
-
-            .minus:hover, .plus:hover{
-                transform: scale(1.05);
-            }
-
+        .minus, .plus{
+            background-color: $white;
+            border-radius: 50%;
+            margin: 0 20px 0 20px;
         }
-        
         .add{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: "Abhaya";
-            font-size: 18px;
-            font-weight: 700;
-            background-color: $caramel-01;
+            font-size: 15px;
+            background-color: transparent;
+            border: 2px solid $white;
             color: $white;
-            width: 150px;
-            border-radius: 30px;
-            margin: 0 15px;
-            transition: 0.3s;
-            i{
-                margin-left: 10px;
-                font-size: 23px;
-            }
+            padding: 0 30px 0 30px;
+            border-radius: 20px;
         }
-        .add:hover{
-            transform: scale(1.05);
-            background-color: $caramel-02;
+        .cart{
+            border-radius: 40px;
+            background-color: $caramel-01;
         }
     }
 
 }
-
-.modal.sale{
-    overflow-y: scroll;
-
-    .price{
-        display: none;
-    }
-    .modal-img{
-        display: none;
-    }
-    .m-btns{
-        display: none;
-    }
-    .p-lista{
-        padding-bottom: 20px;
-    }
-    ul{
-        margin: 10px 0 10px 15px;
-        ul{
-            padding-left: 20px;
-        }
-        li{
-            list-style: disc;
-            font-size: 20px;
-        }
-    }
-    ol{
-        margin: 10px 0 10px 15px;
-        padding-left: 20px;
-        li{
-            list-style: decimal;
-        }
-        ul{
-            li{
-                list-style: disc;
-            }
-        }
-    }
-    
-}
-
-.modal.hide{
-    top: 2000px;
-    pointer-events: none;
-}
-.fade.hide{
-    opacity: 0;
-    pointer-events: none;
-}
-
-//Rodapé
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 250px;
-
-    background-image: url(../../assets/imagens/Footer-Background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -150px;
-    z-index: 1;
-}
-
-.f-brand{
-    display: flex;
-    align-items: center;
-    z-index: 2;
-}
-
-.f-brand .img-brand{
-    margin: 20px;
-    img{
-        width: 140px;
-    }
-}
-
-.f-brand .text-brand{
-    
-    h3{
-        font-size: 40px;
-        border-bottom: 1px solid $white;
-        padding: 10px 10px 10px 0;
-    }
-    p{
-        font-size: 18px;
-        padding: 10px 10px 10px 0;
-    }
-}
-
-.contacts{
-    display: flex;
-    align-items: center;
-    margin: 20px;
-}
-
-.contacts .phone-num{
-    li{
-        list-style: disc;
-        padding: 10px;
-    }
-    font-size: 20px;
-    font-weight: 700;
-    margin: 10px;
-    border-right: 1px solid $white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.contacts .social-media{
-    display: flex;
-    flex-direction: column;
-    a{
-        color: $white;
-    }
-    i{
-        font-size: 30px;
-        padding: 5px;
-    }
-}
-
-@media screen and (max-width: 391px){
-    .title{
-        background-size: contain;
-        width: 90%;
-        margin: 20px 20px;
-    }
-    .title h1{
-        font-size: 50px;
-        text-align: center;
-    }
-    .sec-toggler{
-        margin: 0px;
-        border-radius: 0;
-    }
-    .sec-toggler .open{
-        font-size: 16px;
-        padding: 15px;
-    }
-    .section{
-        height: auto;
-    }
-    .card{
-        width: 300px;
-        margin: 30px 0px 300px 0px;
-    }
-    .card .card-body{
-        height: 300px;
-    }
-}
-
