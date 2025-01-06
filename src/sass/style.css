@@ -428,6 +428,7 @@ footer {
   }
   .text-inicial h1 {
     font-size: 2.7rem;
+    padding: 10px;
   }
   .text-inicial p {
     font-size: 1.3rem;
@@ -1087,6 +1088,7 @@ h1 {
   align-items: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  background-color: #403D39;
 }
 
 .card-img img {
@@ -1097,7 +1099,6 @@ h1 {
   font-family: "Abhaya";
   border: 1px solid #FFFCF2;
   padding: 10px;
-  margin-top: -5px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   display: flex;
